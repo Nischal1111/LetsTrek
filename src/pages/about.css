@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+#d{
+    height: 85vh;
+    width: 100%;
+    object-fit: cover;
+}
+.About{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+.About h1{
+    font-size: 70px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.About p{
+    font-size: 30px;
+
+}
+.abouttext{
+    margin: 2rem 4rem;
+    background-color: aliceblue;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.3);
+    padding: 4rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+.abouttext .text{
+    width: 50%;
+    text-align: start;
+    color: #024b4d;
+}
+.abouttext h1{
+    text-align: start;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #01777b;
+    border-bottom: 5px rgb(212, 169, 139) solid;
+}
+.feature{
+    display: flex;
+
+    justify-content: space-between;
+    box-shadow: 4px 6px 6px rgba(0,0,0,.3);
+    border-radius: 30px;
+    margin: 2rem 4rem;
+    background-color: aliceblue;
+}
+.single{
+    padding: 20px;
+    width: 40%;
+    margin: 10px;
+    border-radius: 20px;
+}
+.single i{
+    color:#024b4d;
+    font-size: 30px;
+}
+.single h3{
+    font-size: 30px;
+    margin: 20px 20px;
+    color: #01777b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.single p{
+    font-size: 16px;
+    color: #01777b;
+    text-align: justify;
+}
+.adv{
+    display: flex;
+    }
+.adv img{
+    height: 300px;
+    width: 300px;
+    margin: 1.1rem 6rem;
+    border-radius: 50%;
+}
+.adv h3{
+    font-size: 30px;
+    padding: 30px;
+    border-radius: 20%;
+    margin: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #024b4d;
+    background-color: rgb(171, 203, 232);
+}
+@media screen and (max-width:930px) {
+    .abouttext {
+            margin: 2rem 2rem;
+            background-color: aliceblue;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, .3);
+            padding: 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 30px;
+        }
+        .abouttext h1{
+            border-bottom: none;
+            width: 100%;
+        }
+        .abouttext .text{
+            width: 100%;
+            padding-top: 1.5rem;
+            text-align: justify;
+        }
+        .feature{
+            height: auto;
+            display: flex;
+            font-size: 14px;
+            flex-direction: column;
+            margin: 2rem 2rem;
+            align-items: center;
+        }
+                .single {
+                    padding: 3rem;
+                    width: 100%;
+                    margin: 10px;
+                    border-radius: 20px;
+                }
+                .single h3{
+                    font-size: 18px;
+                }
+                                .adv {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+
+    
+}
