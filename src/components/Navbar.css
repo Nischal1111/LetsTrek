@@ -22,8 +22,6 @@
 .navmenu{
     margin: 10px;
     display: flex;
-    /* grid-template-columns: repeat(6,auto);
-    grid-gap: 15px; */
     list-style: none;
     align-items: center;
 }
@@ -36,7 +34,7 @@
 }
 .logo{
     padding-right: 10px;
-    color: #01959a;
+    color: #c7c7d2;
 
 }
 .navlogo:hover{

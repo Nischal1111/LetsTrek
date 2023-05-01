@@ -1,0 +1,210 @@
+.Contactimg{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+.contacthead{
+    position: absolute;
+    width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+.contacthead h1{
+    font-size: 60px;
+        font-weight: 600;
+        width: 100%;
+        color: #012024;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+    }
+.contacthead p{
+    font-size: 25px;
+        padding: 20px 18px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 6px;
+        color: #012024;
+}
+.contact--body{
+    margin: 2rem 1rem;
+    box-shadow: 2px 4px 4px rgba(0,0,0,.3);
+    font-size: 20px;
+    background-color: #e9e9e9;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: start;
+}
+.contact--body h4{
+    font-size: 32px;
+    color: #314f73;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+.con--location{
+    margin: 2rem 4.5rem;
+    font-size: 45px;
+    color: #314f73;
+    letter-spacing: 6px;
+}
+.con--location .map{
+    margin-right: 1.5rem;
+    color: #314f73;
+}
+.contactus{
+    margin: 1rem 0rem;
+    width: 100%;
+    background-color:#e9e9e9;
+    padding: 2rem;
+}
+.contactus h2{
+    font-size: 35px ;
+    color: #314f73;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+.contact--methods{
+    display: flex;
+
+
+}
+.contact--methods div{
+    background-color: #d0d0db;
+    cursor: pointer;
+    margin: 1.5rem 3rem;
+    border-radius: 30px;
+    padding: 2rem; 
+    box-shadow: 2px 4px 4px rgba(0,0,0,.1);
+}
+.contacticons{
+    font-size: 40px;
+    margin-bottom: .5rem;
+    color:rgb(55, 120, 141);
+}
+.contact--title{
+    font-size: 30px;
+    margin: 1rem 0rem;
+    color: rgb(55, 120, 141);
+}
+.methods--desc{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.methods2--desc{
+    font-size: 20px;
+    margin-bottom: .7rem;
+    color: rgb(55, 120, 141);
+}
+.contact--container{
+    margin: 3rem;
+    text-align: center;
+}
+.contact--container h3{
+    font-size: 32px;
+    color: #314f73;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.contact--form{
+    max-width: 50rem;
+    margin: auto;
+}
+.contact--form form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+form input,textarea{
+    max-width: 50rem;
+    color: #0f4d55;
+    padding: 1.2rem 2.2rem;
+    border: 1px solid #0f4d55;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.1);
+}
+form input[type="submit"]{
+    max-width: 16rem;
+    margin-top: 1rem;
+    background-color: #e9e9e9;
+    color: #0f4d55;
+    padding: 1.2rem 2.2rem;
+    border:none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .3s;
+    border: .3px #314f73 solid;
+}
+form input[type="submit"]:hover{
+    background-color: #314f73;
+    color: #e9e9e9;
+    transform: scale(0.9);
+}
+.plan{
+    position: relative;
+}
+.plan .img2{
+    height: 80vh;
+    object-fit: cover;
+    width: 100%;
+}
+.plan .startplan{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.startplan h2{
+    font-size: 60px;
+    color: #e9e9e9;
+    margin-bottom: 3rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.startplan .plan--button {
+    padding: 2rem;
+    border: none;
+    background-color: #314f73;
+}
+.startplan .plan--button a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #e9e9e9;
+}
+.plan--button:hover{
+    transform:scale(.9);
+}
+
+
+@media screen and (max-width:1050px) {
+    .contact--title{
+        font-size: 24px;
+    }
+        .methods--desc{
+            font-size: 14px;
+        }
+        .methods2--desc{
+            font-size: 16px;
+        }
+}
+@media screen and (max-width:900px){
+    .contact--methods {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+    }
+        .contactus h2{
+            text-align: start;
+            margin-left: 2.5rem;
+        }
+
+}

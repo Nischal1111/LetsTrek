@@ -8,17 +8,17 @@ const ExploreTreks = () => {
     const[index,setIndex] = useState(0)
     // let box = document.querySelector('.innerslider')
     const ref= useRef()
+    const cardref=useRef()
     const onClick=(type)=>{
-        let width=ref.current.clientWidth;
+        let width=cardref.current.clientWidth;
         if(type==='prev'){
-            ref.current.style.transform=`translateX(${width+card}px)`
-            setCard(card+width)
+            ref.current.style.transform=`translateX(${width+card+60}px)`
+            setCard(card+width+60)
             setIndex(index-1)
         }
         if(type==='next'){
-            ref.current.style.transform=`translateX(${card-width}px)`
-            setCard(card-width)
-            console.log(card)
+            ref.current.style.transform=`translateX(${card-width-60}px)`
+            setCard(card-width-60)
             setIndex(index+1)
         }
     }
@@ -37,7 +37,7 @@ return (
         const {id,title,price,days,location,imgSrc,desc}=place;
         return(<>
 
-            <div drag="x" className="place" key={id}>
+            <div drag="x" className="place" key={id} ref={cardref}>
                     <img src={imgSrc} alt='Trek images'></img>
                     <h3>{title}</h3>
                     <div className='pl'>
