@@ -20,7 +20,7 @@ return (<>
         </p>
     </div>
     <h2 className='con--location'><BsFillPinMapFill className='map'/>Check our Location</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d973.8682697438497!2d85.32603488371932!3d27.743594383739513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c81d35630f%3A0x90471f801fa6e175!2sRam%20Mandir%20Dhapasi!5e0!3m2!1sen!2snp!4v1682912297844!5m2!1sen!2snp" width="98%" height="500" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d973.8682697438497!2d85.32603488371932!3d27.743594383739513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c81d35630f%3A0x90471f801fa6e175!2sRam%20Mandir%20Dhapasi!5e0!3m2!1sen!2snp!4v1682912297844!5m2!1sen!2snp" width="98%" height="500" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
     <div className='contactus'>
         <h2>Contact Us Now</h2>
         <div className='contact--methods'>

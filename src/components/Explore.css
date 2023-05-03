@@ -14,7 +14,7 @@
 
     cursor: grab;
     position: relative;
-    margin: 1rem;
+    margin-top: 1rem;
     border-radius: 30px;
     overflow: hidden;
     padding: 1.2rem;
@@ -36,8 +36,8 @@ padding: 2rem 0 ;
     position: relative;
     padding: 1.5rem;
     
-    background-color:#d0d0db;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, .4);
+    background-color:#d3d3db;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
     cursor: pointer;
 }
 .place:hover{

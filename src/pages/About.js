@@ -3,10 +3,12 @@ import Navbar from '../components/Navbar';
 import './about.css'
 import Foot from '../components/Foot'
 import Aboutdata from './Aboutdata';
+import Sign from '../components/Sign';
 const About = () => {
 return (
     <>
     <Navbar/>
+    <Sign/>
     <img  id="d" src='https://images.pexels.com/photos/3027138/pexels-photo-3027138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'></img>
     <div className='About'>
     <h1>Know about us</h1>

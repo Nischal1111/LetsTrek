@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
-import {Component} from 'react';
 import './Navbar.css'
 import {Menu} from './Menu';
 import {Link} from 'react-router-dom';
-import { useAuth0 } from "@auth0/auth0-react";
+import { useSignContext } from './Context'
 
 // class Navbar extends Component{
 
 // render(){
-function Navbar(){
+const Navbar=()=>{
     const [showButton,setButton]=useState(false)
     const handleClick=()=>{
         setButton(!showButton)
     }
-    const { loginWithRedirect,isAuthenticated,logout,user } = useAuth0();
+    const {openSignup} = useSignContext();
+
     
 return (<>
     <div className='nav'>
@@ -33,8 +33,7 @@ return (<>
                         </Link>
                     </li>
                 )})}
-            <button>Signup</button>
-            <button>Login</button>
+            <button onClick={openSignup}>Signup</button>
         </ul>
     </nav>
     </div>

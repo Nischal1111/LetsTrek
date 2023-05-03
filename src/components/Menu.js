@@ -22,15 +22,5 @@ export const Menu=[
         icon:'fa-solid fa-phone',
         cName:'nav-link',
         url:'/contact'
-    },
-    {
-        title:'Signup',
-        cName:'nav-mobile',
-        url:'/signup'
-    },
-    {
-        title:'Login',
-        cName:'nav-mobile',
-        url:'/login'
-    },
+    }
 ]
