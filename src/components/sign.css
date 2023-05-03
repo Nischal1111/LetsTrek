@@ -33,7 +33,7 @@
     border-radius: 18px;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, .1);
     background-color: rgb(245, 242, 242);
-    height: 60vh;
+    height: 70vh;
     max-width: 1170px;
     text-align: center;
     /* display: grid;
@@ -101,7 +101,7 @@
 
 .signup-container .col-2 img {
     width:400px;
-    height: 60vh;
+    height: 70vh;
     object-fit: cover;
     align-self: flex-end;
     border-radius: 18px;
