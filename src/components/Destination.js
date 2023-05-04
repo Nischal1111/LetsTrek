@@ -1,13 +1,38 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Destination.css'
 import Mardi1 from '../assets/MardiImg1.jpeg'
 import Mardi2 from '../assets/MardiImg2.jpeg'
 import Tilicho1 from '../assets/tilicho1.jpeg'
 import Tilicho2 from '../assets/tilicho2.jpeg'
 import Destinationdata from './Destinationdata'
+import {motion,useAnimation} from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 const Destination = () => {
+    const {ref, inView}=useInView({threshold:0.15});
+    const animation = useAnimation()
+    useEffect(()=>{
+        if(inView){
+            animation.start({
+                x:0,
+                transition:{
+                    type:"spring",
+                    duration:1.5,
+                    bounce:.1,
+                }
+            })
+        }
+        if(!inView){
+            animation.start({
+                x:"-100vw"
+            })
+        }
+    },[inView])
 return (<>
-        <div className='destination'>
+        <div ref={ref}>
+        <motion.div className='destination'
+        animate={animation}
+            
+        >
         <h1> <i className="fa-solid fa-location-dot"></i>Popular Treks</h1>
         <p>Trek with us to all these fun places</p>
         <Destinationdata  className='dest-first' head='KHUMAI DADA TREK'
@@ -34,6 +59,7 @@ return (<>
         img1={Tilicho1}
         img2={Tilicho2}
         />
+        </motion.div>
         </div>
     </>
 )

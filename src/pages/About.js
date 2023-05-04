@@ -1,12 +1,39 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Navbar from '../components/Navbar';
 import './about.css'
 import Foot from '../components/Foot'
 import Aboutdata from './Aboutdata';
 import Sign from '../components/Sign';
+import {motion,useAnimation} from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 const About = () => {
+    const {ref, inView}=useInView({threshold:0.3});
+    const animation2 = useAnimation()
+    useEffect(()=>{
+        if(inView){
+            animation2.start({
+                x:0,
+                transition:{
+                    type:"spring",
+                    duration:1,
+                    bounce:.3,
+                    
+
+                }
+            })
+        }
+        if(!inView){
+            animation2.start({
+                x:"100vw",
+                
+
+            })
+        }
+    },[inView])
+
 return (
     <>
+    <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:.8,ease:"easeIn"}}>
     <Navbar/>
     <Sign/>
     <img  id="d" src='https://images.pexels.com/photos/3027138/pexels-photo-3027138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'></img>
@@ -14,6 +41,8 @@ return (
     <h1>Know about us</h1>
     <p>We are always here for you</p>
     </div>
+    <div ref={ref} >
+    <motion.div  animate={animation2}>
     <div className='abouttext'>
         <h1>ABOUT<br></br>LetsTrek</h1>
         <p className='text'>Given the fact that the tourism industry is one of the biggest industries in Nepal. There are many travels 
@@ -24,6 +53,8 @@ return (
             Adventure Experts and guides true explore with experience in the Himalayas Mountains of Nepal. Our office is 
             located in Thamel, Kathmandu Nepal, South Asia. And we also do Tibet and Bhutan tours as well. Meet our 
             adventure team. Read our TripAdvisor Reviews and Google Reviews.</p>
+    </div>
+    </motion.div>
     </div>
     <div className='feature'>
         {Aboutdata.map((about)=>{
@@ -40,13 +71,9 @@ return (
             )
         })}
     </div>
-    <div className='adv'>
-        <h3>Adventure <br></br>Specialists</h3>
-        <img src='https://images.unsplash.com/photo-1501535033-a594139be346?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'></img>
-        <p></p>
-        <img src='https://images.unsplash.com/photo-1586022045315-1cdd6493045c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'></img>
-    </div>
+
     <Foot/>
+    </motion.div>
     </>
 )
 }

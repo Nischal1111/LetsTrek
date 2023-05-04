@@ -12,7 +12,7 @@ const Sign = () => {
           
             <div className="col-1">
               <h2>Sign In</h2>
-              <span>Join in for services</span>
+              <span>Join us for services</span>
               <form id='form' className='flex flex-col'>
                 <input type='text' placeholder='Username'></input>
                 <input type='text' placeholder='Email'></input>

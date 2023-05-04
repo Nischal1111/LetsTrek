@@ -1,4 +1,4 @@
-import React, { useState,useRef } from 'react'
+import React, { useState,useRef,useEffect } from 'react'
 import './Explore.css'
 import PlaceData from './PlaceData'
 import {GrLinkNext,GrLinkPrevious} from "react-icons/gr";
@@ -6,7 +6,6 @@ import {GrLinkNext,GrLinkPrevious} from "react-icons/gr";
 const ExploreTreks = () => {
     const [card,setCard]=useState(0);
     const[index,setIndex] = useState(0)
-    // let box = document.querySelector('.innerslider')
     const ref= useRef()
     const cardref=useRef()
     const onClick=(type)=>{
@@ -32,12 +31,12 @@ return (
         <button className='prev' onClick={()=>{onClick('prev')}} disabled={card>=0}><GrLinkPrevious/></button> 
         <button  className='next' onClick={()=>{onClick('next')}} disabled={card<=-1300}><GrLinkNext/></button>
         </div>
-    <div className='innerslider' ref={ref} >
+    <div className='innerslider' ref={ref}>
     {PlaceData.map((place)=>{
         const {id,title,price,days,location,imgSrc,desc}=place;
         return(<>
 
-            <div drag="x" className="place" key={id} ref={cardref}>
+            <div drag="x" className="place" key={id} ref={cardref} >
                     <img src={imgSrc} alt='Trek images'></img>
                     <h3>{title}</h3>
                     <div className='pl'>

@@ -22,23 +22,24 @@
 }
 
 .innerslider{
+    height: 100%;
 display: flex;
-gap: 4rem;
-padding: 2rem 0 ;
+gap: 1rem 4rem;
+padding: 1rem 0 ;
     width: 100%;
     transition: transform 0.5s ease-out;
 }
 
 .place{
     width: 400px;
-    min-height: 600px;
+    /* min-height: 600px; */
     border-radius: 18px;
     position: relative;
     padding: 1.5rem;
-    
     background-color:#d3d3db;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
     cursor: pointer;
+    height: 560px;
 }
 .place:hover{
     top: -4px;
