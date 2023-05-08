@@ -1,4 +1,4 @@
-import './Destination.css'
+import '../Css/Destination.css'
 import { Component } from 'react'
 
 class Destinationdata extends Component{

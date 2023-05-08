@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import './Main.css';
+import '../Css/Main.css';
 import Homedata from './Homedata';
 
 

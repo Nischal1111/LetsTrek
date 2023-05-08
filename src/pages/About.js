@@ -1,12 +1,13 @@
 import React,{useEffect} from 'react'
 import Navbar from '../components/Navbar';
-import './about.css'
+import '../Css/about.css'
 import Foot from '../components/Foot'
-import Aboutdata from './Aboutdata';
+import Aboutdata from '../Data/Aboutdata';
 import Sign from '../components/Sign';
 import {motion,useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 const About = () => {
+    
     const {ref, inView}=useInView({threshold:0.3});
     const animation2 = useAnimation()
     useEffect(()=>{
@@ -33,10 +34,10 @@ const About = () => {
 
 return (
     <>
-    <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:.8,ease:"easeIn"}}>
+    <motion.div className="about--main"initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:.8,ease:"easeIn"}}>
     <Navbar/>
     <Sign/>
-    <img  id="d" src='https://images.pexels.com/photos/3027138/pexels-photo-3027138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'></img>
+    <img  id="d" src='https://images.unsplash.com/photo-1533005346585-b131e79eef3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80'></img>
     <div className='About'>
     <h1>Know about us</h1>
     <p>We are always here for you</p>
@@ -71,7 +72,6 @@ return (
             )
         })}
     </div>
-
     <Foot/>
     </motion.div>
     </>

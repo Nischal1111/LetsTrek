@@ -1,10 +1,10 @@
 import React,{useEffect} from 'react'
-import './Destination.css'
+import '../Css/Destination.css'
 import Mardi1 from '../assets/MardiImg1.jpeg'
 import Mardi2 from '../assets/MardiImg2.jpeg'
 import Tilicho1 from '../assets/tilicho1.jpeg'
 import Tilicho2 from '../assets/tilicho2.jpeg'
-import Destinationdata from './Destinationdata'
+import Destinationdata from '../Data/Destinationdata'
 import {motion,useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 const Destination = () => {

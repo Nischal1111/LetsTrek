@@ -29,7 +29,7 @@
     width: 60vw;
     display: flex;
     border: 1px solid #e9ecef;
-    border-radius: 18px;
+    border-radius: 13px;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, .1);
     background-color: rgb(245, 242, 242);
     height: 70vh;
@@ -42,8 +42,8 @@
 
 .signup-container .close-signup-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 2%;
+    right: 2%;
     font-size: 2rem;
     background: transparent;
     border-color: transparent;
@@ -100,11 +100,11 @@
 
 .signup-container .col-2 img {
     width:400px;
-    height: 70vh;
+    height: 69.8vh;
     object-fit: cover;
     align-self: flex-end;
-    border-top-right-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
     display: none;
 }
 

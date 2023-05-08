@@ -1,5 +1,5 @@
 import React from 'react'
-import "./gallery.css"
+import "../Css/gallery.css"
 import MasonryImg from './MasonryImg'
 
 const Gallery = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Navbar.css'
+import '../Css/Navbar.css'
 import {Menu} from './Menu';
 import {Link} from 'react-router-dom';
 import { useSignContext } from './Context'
@@ -33,7 +33,7 @@ return (<>
                         </Link>
                     </li>
                 )})}
-            <button onClick={openSignup}>Signup</button>
+            <button className="nav--button"onClick={openSignup}>Signup</button>
         </ul>
     </nav>
     </div>

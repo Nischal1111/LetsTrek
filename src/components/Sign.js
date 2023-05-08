@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaTimes} from "react-icons/fa"
-import "./sign.css"
+import "../Css/sign.css"
 import { useSignContext } from './Context'
 
 const Sign = () => {
@@ -27,7 +27,7 @@ const Sign = () => {
             </div>
           
       
-        <button className='close-signup-btn' onClick={closeSignup}><FaTimes/></button>
+        <button className='close-signup-btn' onClick={closeSignup}><FaTimes className='close--button'/></button>
       </div>
     </div>
   )

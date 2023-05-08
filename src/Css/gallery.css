@@ -18,4 +18,8 @@ margin: 2rem 3rem;
     border-radius: 18px;
     display: block;
     height: auto;
+    transition: .3s;
+}
+.galleryImg:hover{
+    transform: scale(1.05);
 }

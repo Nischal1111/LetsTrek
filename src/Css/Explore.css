@@ -10,6 +10,24 @@
     font-size: 40px;
     margin-right: 10px;
 }
+.prev, .next{
+    border-radius: 14px;
+        margin: 10px;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 12px;
+        background-color: #cfcccc;
+        letter-spacing: 2px;
+}
+.prev:hover,.next:hover{
+    background-color: #59adaf;
+        color: #eee;
+        transition: .2s ease-in-out;
+        border: none;
+        transform: scale(.9);
+}
 .exploreslider{
 
     cursor: grab;
@@ -18,7 +36,6 @@
     border-radius: 30px;
     overflow: hidden;
     padding: 1.2rem;
-    background-color:#e9e9e9;
 }
 
 .innerslider{
@@ -28,15 +45,17 @@ gap: 1rem 4rem;
 padding: 1rem 0 ;
     width: 100%;
     transition: transform 0.5s ease-out;
+
 }
 
 .place{
     width: 400px;
     /* min-height: 600px; */
     border-radius: 18px;
+        background-color: #d7d7ec;
     position: relative;
     padding: 1.5rem;
-    background-color:#d3d3db;
+    /* background-color:#d3d3db; */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
     cursor: pointer;
     height: 560px;
@@ -93,12 +112,14 @@ padding: 1rem 0 ;
 .exploremore button{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
     background-color: lightblue;
-
+    border: 0px solid transparent;
     padding: 2.5rem;
     border-radius: 20px;
 }
 .exploremore button:hover{
     top: 4px;
+    transform: scale(.98);
+    border: 0px solid transparent;
     filter: brightness(.9);
     background-color: rgb(156, 206, 222);
 }

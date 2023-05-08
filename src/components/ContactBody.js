@@ -1,5 +1,5 @@
 import React from 'react'
-import './contactbody.css'
+import '../Css/contactbody.css'
 import {BsFillPinMapFill} from 'react-icons/bs'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {AiFillWechat} from 'react-icons/ai'

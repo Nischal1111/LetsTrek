@@ -1,11 +1,10 @@
 import React, { useState,useRef,useEffect } from 'react'
-import './Explore.css'
+import '../Css/Explore.css'
 import PlaceData from './PlaceData'
 import {GrLinkNext,GrLinkPrevious} from "react-icons/gr";
 
 const ExploreTreks = () => {
     const [card,setCard]=useState(0);
-    const[index,setIndex] = useState(0)
     const ref= useRef()
     const cardref=useRef()
     const onClick=(type)=>{
@@ -13,12 +12,10 @@ const ExploreTreks = () => {
         if(type==='prev'){
             ref.current.style.transform=`translateX(${width+card+60}px)`
             setCard(card+width+60)
-            setIndex(index-1)
         }
         if(type==='next'){
             ref.current.style.transform=`translateX(${card-width-60}px)`
             setCard(card-width-60)
-            setIndex(index+1)
         }
     }
 return (
@@ -36,7 +33,7 @@ return (
         const {id,title,price,days,location,imgSrc,desc}=place;
         return(<>
 
-            <div drag="x" className="place" key={id} ref={cardref} >
+            <div className="place" key={id} ref={cardref} >
                     <img src={imgSrc} alt='Trek images'></img>
                     <h3>{title}</h3>
                     <div className='pl'>
