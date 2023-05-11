@@ -4,6 +4,7 @@
     letter-spacing: 4px;
     text-transform: uppercase;
     color: rgb(55, 120, 141);
+    text-align: center;
 
 }
 .explorehead .i{
@@ -36,6 +37,7 @@
     border-radius: 30px;
     overflow: hidden;
     padding: 1.2rem;
+    text-align: center;
 }
 
 .innerslider{
@@ -61,7 +63,7 @@ padding: 1rem 0 ;
     height: 560px;
 }
 .place:hover{
-    top: -4px;
+    transform: translateY(-8px);
     transition: 1s linear;
     box-shadow: 8px 8px 11px rgba(33, 33, 33, .2)
 }

@@ -31,6 +31,7 @@
 .contact--body{
     margin: 2rem 4rem 4rem 2rem;
     padding: 2rem;
+        text-align: center;
     box-shadow: 0px 4px 6px rgba(0,0,0,.1);
     font-size: 20px;
     background-color: #d7d7ec;
@@ -41,6 +42,7 @@
 .contact--body h4{
     font-size: 32px;
     color: #314f73;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 2rem;
@@ -56,6 +58,7 @@
     color: #314f73;
 }
 .contactus{
+    text-align: center;
     margin: 1rem 0rem;
     width: 100%;
     background-color:#d7d7ec;

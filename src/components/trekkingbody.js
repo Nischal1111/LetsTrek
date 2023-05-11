@@ -2,6 +2,7 @@ import React from 'react'
 import '../Css/trekkingbody.css'
 import trekimg from "../assets/trek.jpeg"
 import Search from './Search'
+import Treklist from './Treklist'
 
 const Trekkingbody = () => {
   return (
@@ -20,6 +21,7 @@ const Trekkingbody = () => {
             adventure team. Read our TripAdvisor Reviews and Google Reviews.</p>
     </div>
     <Search/>
+    <Treklist/>
     </div>
   )
 }
