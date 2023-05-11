@@ -109,3 +109,7 @@
     color: black;
     list-style: none;
 }
+.singletrek--days{
+    color: grey;
+    letter-spacing: 1px;
+}
