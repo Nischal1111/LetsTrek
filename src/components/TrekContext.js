@@ -1,4 +1,4 @@
-import React,{useState,useEffect,createContext, useContext, Children} from 'react'
+import React,{useState,useEffect,createContext} from 'react'
 import TrekData from '../Data/Trekdata'
 
 export const TrekContext = createContext();
@@ -7,35 +7,42 @@ const TrekContextProvider = ({children}) => {
     const [days,setDays]=useState("Duration (any)")
     const [trekdays,setTrekdays]=useState([])
     const [price,setPrice]=useState("Price range (any)")
-    const [pricerange,setPriceRange]=useState([])
-
 useEffect(()=>{
     const alltrekdays = trekking.map((singletrek)=>{
         return singletrek.days
     })
     console.log(alltrekdays)
     const uniquedays = ['Duration (any)', ...new Set(alltrekdays)]
+
     console.log(uniquedays)
+
     setTrekdays(uniquedays)
 },[])
 useEffect(()=>{
     const allprices = trekking.map((singletrek)=>{
-        return singletrek.pricerange
+        return singletrek.price
     })
     console.log(allprices)
     const uniqueprice = ['Price range (any)', ...new Set (allprices)]
     console.log(uniqueprice)
-    setPriceRange(uniqueprice)
+    setPrice(uniqueprice)
 },[])
 const handleClick = ()=>{
-    console.log("clicked")
+    const isDefault=(str)=>{
+        return str.split(" ").includes("(any)")
+    }
+    console.log(isDefault(days))
+
+
+    const minPrice=parseInt(price.split('')[0])
+    console.log(minPrice)
 }
 
 
 
 return (
     <TrekContext.Provider value={{trekking,days,setDays,trekdays,setTrekdays,handleClick,
-    price,setPrice,pricerange,setPriceRange}}>
+    price,setPrice}}>
         {children}
     </TrekContext.Provider>
 )

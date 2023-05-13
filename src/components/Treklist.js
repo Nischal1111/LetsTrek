@@ -13,9 +13,9 @@ const Treklist = () => {
         <div className="container">
             {trekking.map((singleTrek,index)=>{
                 return(<>
-                    <Link to={`/trek/${singleTrek.id}`} key={index}>
-                    </Link>
+                    <Link to={`/trek/${singleTrek.id}`} key={index} className='no-line'>
                         <SingleTrek singleTrek={singleTrek}></SingleTrek>
+                    </Link>
                 </>)
             })}
         </div>

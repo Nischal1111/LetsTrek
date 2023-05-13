@@ -70,7 +70,7 @@ padding: 1rem 0 ;
 .place h3{
     letter-spacing: 2px;
     margin: 10px 0px;
-    font-weight: 700;
+    font-weight: 200;
     color: #314f73;
     font-size: 24px;
 
@@ -84,10 +84,14 @@ padding: 1rem 0 ;
 }
 .place .pl{
     display: flex;
+    font-weight: 200;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 22px;
     color: rgb(1, 162, 162);
 
+}
+.place .pl p{
+    font-family: geneva;
 }
 .place .desc{
     text-align: justify;

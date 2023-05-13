@@ -90,26 +90,96 @@
     color: black;
 }
 .ooo{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+.container{
+    margin: 2rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+.no-line{
+    text-decoration: none;
+    color: gray;
+    
 }
 .singletrek{
-    background-color: rgb(249, 241, 231);
+    text-decoration: none;
+    background-color:rgb(253, 245, 253);
+    box-shadow: 2px 4px 4px rgba(0,0,0,.1);
     padding: 20px;
+    width: 400px;
+    height: 600px;
     border-radius: 14px;
-    margin: 1rem;
-    width: 100%;
+    
 }
 .singletrek--img{
     height: 300px;
-    width: 300px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .2);
+    width: 360px;
     border-radius: 20px;
 }
-.singletrek--h1,.singletrek--p{
-    text-decoration: none;
+.singlecontainer{
+    display: flex;
+    justify-content: space-between;
+    margin: .7rem .5rem;
+}
+.singletrek--h1{
     color: black;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin: 1.2rem .5rem;
     list-style: none;
 }
-.singletrek--days{
-    color: grey;
-    letter-spacing: 1px;
+.singlecontainer .singletrek--h2{
+    font-size: 14px;
+    font-weight: 200;
+    color: blanchedalmond;
+    background-color: #314f73;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+.singlecontainer .singletrek--days{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(242, 233, 219);
+    background-color: #82acdf;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+.singletrek--para{
+    font-size: 14px;
+    text-align: justify;
+
+}
+.singlecontainer .fa-clock{
+    margin-right: 5px;
+}
+.Single--btn--p{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem .5rem;
+}
+.Single--btn--p .singletrek--button{
+    background-color: rgb(199, 217, 250);
+    padding:  10px;
+    font-size: 16px;
+    border-radius: 18px;
+    color: rgb(10, 34, 56);
+    border: none;
+}
+.Single--btn--p .singletrek--p{
+    color: #314f73;
+    font-weight: 200;
+    font-size: 24px;
+    font-family: geneva;
+}
+.Single--btn--p .singletrek--button:hover{
+    transform: scale(.9);
+    transition: .3s all;
+    background-color: #cfdef0;
+    cursor: pointer;
 }

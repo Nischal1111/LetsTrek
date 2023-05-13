@@ -25,8 +25,9 @@ const TrekData =[
         location:'Kaski, Nepal',
         days: '17-20 Days',
         price: '$795',
+        cln:'singletrek item-1',
         pricerange:"$500-$1000",
-        desc :'Annapurna Base Camp Trek welcomes thousands of trekkers to its superb blend of nature with the beautiful villages. When we are at the Annapurna Base Camp feel like we’re base of the mountains of those above 7000m.  Annapurna Base Camp Trek provides the best scenery of the ice giants like Mt. Macchapuchhre (6.993m), The great view of Annapurna I (8081m) Annapurna Range along with several others.' 
+        desc :'Annapurna Base Camp Trek welcomes thousands of trekkers to its superb blend of nature with the beautiful villages. When we are at the Annapurna Base Camp feel like we’re base of the mountains of those above 7000m.  Annapurna Base Camp Trek provides the best' 
     },
     {
         id:1,
@@ -34,19 +35,21 @@ const TrekData =[
         title:'Langtang Gosaikunda Trek',
         location:'Rasuwa, Nepal',
         days:'8-11 Days',
+        cln:'singletrek item-2',
         price:'$445',
         pricerange:">$500",
-        desc:'Langtang Gosaikunda Lake Trek combines three of the most popular. Trekking routes in the Langtang region. The Langtang Valley, Helambu valley, and the Gosaikunda Lake. Situated at the north of Kathmandu this trek provides the view of the snowclad mountaintops. The Holy lake of Gosainkunda (4,380m) as well as the deep valley full of diverse. Wilderness and abundance of vegetation.'
+        desc:'Langtang Gosaikunda Lake Trek combines three of the most popular. Trekking routes in the Langtang region. The Langtang Valley, Helambu valley, and the Gosaikunda Lake. Situated at the north of Kathmandu this trek provides the view of the snowclad mountaintops. '
     },
     {
         id:2,
         imgSrc:img3,
         title:'Gokyo Lake Trek',
         location:'Solukhumbu, Nepal',
+        cln:'singletrek item-3',
         days:'12-15 Days',
         price:'$1025',
         pricerange:"$1000-$1500",
-        desc:'Everest Gokyo Lake Trek is one of the best trekking and hiking in Nepal. It is a moderate trek beginning from Lukla. However, The main highlighted feature of the Gokyo Lake 4800m. And Gokro Ri. Is its location which is a magical place. Moreover, That is residing in the foothills of Himalayas. Therefore, is full of blue glacier lakes dominated by Himalayas of Mount Everest, Mount Lhotse. Mount Makalu.'
+        desc:'Everest Gokyo Lake Trek is one of the best trekking and hiking in Nepal. It is a moderate trek beginning from Lukla. However, The main highlighted feature of the Gokyo Lake 4800m. And Gokro Ri. Is its location which is a magical place. Moreover, That is residing in the foothills of Himalayas.'
 
     },
     {
@@ -54,6 +57,7 @@ const TrekData =[
         imgSrc:img4,
         title:'Manaslu Tsum Valley Trek',
         location:'Gorkha, Nepal',
+        cln:'singletrek item-4',
         days:'20-25 Days',
         price:'$1925',
         pricerange:"$1500-$2000",
@@ -64,10 +68,11 @@ const TrekData =[
         imgSrc:img5,
         title:'Tilicho Lake Trek',
         location:'Manang, Nepal',
+        cln:'singletrek item-5',
         days:'12-15 Days',
         price:'$825',
         pricerange:"$500-$1000",
-        desc:'Tilicho Lake is located at an altitude of 4919m in the Manang district. This is one of the world’s highest lakes situated at the highest altitude. This Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people so Hindu people around the world gather in Tilicho lake to take holy baths.'
+        desc:'Tilicho Lake is located at an altitude of 4919m in the Manang district. This is one of the world’s highest lakes situated at the highest altitude. This Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people.'
     },
     {
         id:5,
@@ -76,8 +81,9 @@ const TrekData =[
         location:'Kaski, Nepal',
         days:'8-11 Days',
         price:'$335',
+        cln:'singletrek item-6',
         pricerange:">$500",
-        desc:'Located at the base of Mt. Machhapuchhre and Mardi Himal, Mardi Himal Trek is like no other. With the rocky terrain to the beautiful grasslands and the lush rhododendron forest, the amount of nature one can grace on this journey is immense. Also hailed as one of the most beautiful treks in all of the Mardi Himal Trek has been increasingly popular.'
+        desc:'Located at the base of Mt. Machhapuchhre and Mardi Himal, Mardi Himal Trek is like no other. With the rocky terrain to the beautiful grasslands and the lush rhododendron forest, the amount of nature one can grace on this journey is immense.'
 
 
     },
@@ -88,8 +94,9 @@ const TrekData =[
         location:'Khopra, Nepal',
         days:'8-11 Days',
         price:'$900',
+        cln:'singletrek item-7',
         pricerange:"$500-$1000",
-        desc:'Khopra Danda Trek via Hotspring also known as the (Khopra Ridge Trek). Therefore, Great alternative and popular to the beautiful views, Of the Annapurna range, It’s about a 12 days trip from home to home. Moreover, ‘Heaven is a myth but Nepal is real’ the statement, Is just a statement because Nepal really is a heaven filled. With the tall Himalayas, insanely beautiful waterfalls. In addition, Raging rivers, and soothing hot springs.'
+        desc:'Khopra Danda Trek via Hotspring also known as the (Khopra Ridge Trek). Therefore, Great alternative and popular to the beautiful views, Of the Annapurna range, It’s about a 12 days trip from home to home. Moreover, ‘Heaven is a myth but Nepal is real’ the statement'
     },
     {
     id: 7,
@@ -97,8 +104,9 @@ const TrekData =[
     title: "Everest Base Camp Trek",
     price: "$1,200",
     pricerange:"$1000-$1500",
+    cln:'singletrek item-8',
     days: "12-15 Days",
-    description: "Experience the breathtaking beauty of the world's highest mountain peak and its surrounding landscapes.",
+    desc: "Experience the breathtaking beauty of the world's highest mountain peak and its surrounding landscapes., Is just a statement because Nepal really is a heaven filled. With the tall Himalayas, insanely beautiful waterfalls. In addition, Raging rivers, and soothing hot springs.",
     location: "Khumbu, Nepal"
     },{
     id: 8,
@@ -106,8 +114,9 @@ const TrekData =[
     title: "Manaslu Circuit Trek",
     price: "$1,500",
     pricerange:"$1500-$2000",
+    cln:'singletrek item-9',
     days: "20-25 Days",
-    description: "Embark on an off-the-beaten-path journey through stunning mountain landscapes and traditional Tibetan villages.",
+    desc: "Embark on an off-the-beaten-path journey through stunning mountain landscapes and traditional Tibetan villages.Is just a statement because Nepal really is a heaven filled. With the tall Himalayas, insanely beautiful waterfalls. In addition, Raging rivers, and soothing hot springs.",
     location: "Manaslu, Nepal"
     },{
     id: 9,
@@ -115,37 +124,41 @@ const TrekData =[
     title: "Upper Mustang Trek",
     price: "$2,500",
     pricerange:"$2000-$2500",
+    cln:'singletrek item-10',
     days: "17-20 Days",
-    description: "Discover the ancient kingdom of Lo and its unique culture and landscapes, hidden behind the Himalayan peaks.",
+    desc: "Discover the ancient kingdom of Lo and its unique culture and landscapes, hidden behind the Himalayan peaksThis Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people..",
     location: "Mustang, Nepal"
     },  {
     id: 10,
     imgSrc:img11,
     title: "Kanchenjunga Base Camp Trek",
+    cln:'singletrek item-11',
     price: "$2,000",
     pricerange:"$2000-$2500",
     days: "20-25 Days",
-    description: "Trek through remote alpine landscapes to reach the base camp of the world's third-highest mountain peak.",
+    desc: "Trek through remote alpine landscapes to reach the base camp of the world's third-highest mountain peak. Ghale Gaun Trek Home Stay provides new experiences to the Tourists Ghale Gaun Trek Home Stay provides new experiences to the Tourists",
     location: "Kanchenjunga, Nepal"
     },
     {
     id: 11,
     imgSrc:img12,
+    cln:'singletrek item-12',
     title: "Makalu Base Camp Trek",
     price: "$1,800",
     pricerange:"$1500-$2000",
     days: "20-25 Days",
-    description: "Explore the rugged terrain and diverse ecosystems of the Makalu-Barun National Park and its towering peak.",
+    desc: "Explore the rugged terrain and diverse ecosystems of the Makalu-Barun National Park and its towering peak.hidden behind the Himalayan peaksThis Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people..",
     location: "Makalu, Nepal"
     },
     {
     id: 12,
     imgSrc:img13,
     title: "Dhaulagiri Circuit Trek",
+    cln:'singletrek item-13',
     price: "$1,600",
     pricerange:"$1500-$2000",
     days: "20-25 Days",
-    description: "Embark on a challenging trek around the world's seventh-highest mountain peak, through dramatic landscapes and ethnic communities.",
+    desc: "Embark on a challenging trek around the world's seventh-highest mountain peak, through dramatic landscapes and ethnic communities.From there we start our hike up the hills to Ghale Gaun. We also trek to Bhujung and return back to Pokhara and take a ride back to Kathmandu..",
     location: "Dhaulagiri, Nepal"
     },
     {
@@ -153,9 +166,10 @@ const TrekData =[
     imgSrc:img14,
     title: "Nar Phu Valley Trek",
     price: "$1,500",
+    cln:'singletrek item-14',
     pricerange:"$1500-$2000",
     days: "17-20 Days",
-    description: "Discover the remote Nar and Phu valleys and their unique Tibetan culture, set amidst stunning mountain scenery.",
+    desc: "Discover the remote Nar and Phu valleys and their unique Tibetan culture, set amidst stunning mountain scenery.This Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people.",
     location: "Kaski, Nepal"
     },
     {
@@ -163,39 +177,43 @@ const TrekData =[
     imgSrc:img15,
     title: "AmaDablam Base Trek",
     price: "$1,200",
+    cln:'singletrek item-15',
     pricerange:"$1000-$1500",
     days: "8-11 Days",
-    description: "Beautiful mountain Amadablam Base Camp Trek in Everest region. Therefore, know the khumbu valley. And khumbu glacier with great views. Of Highest Mountains in the world Mt Everest. Moreover, and amazing views with High Mountain peak. Therefore, with amazing Sherpa village Tibetan life.",
+    desc: "Beautiful mountain Amadablam Base Camp Trek in Everest region. Therefore, know the khumbu valley. And khumbu glacier with great views. Of Highest Mountains in the world Mt Everest. Moreover, and amazing views with High Mountain peak. Therefore, with amazing Sherpa village Tibetan life.",
     location: "Lukla, Nepal"
     },
     {
     id: 15,
     imgSrc:img16,
     title: "Jiri to Everest Trek",
+    cln:'singletrek item-16',
     price: "$1,405",
     pricerange:"$1000-$1500",
     days: "15-18 Days",
-    description: "The immense wilderness and the scenic route  of EverestBase Camp Trek Jiri. Has gives a sense of freedom and ecstasy that other treks can barely match.",
+    desc: "The immense wilderness and the scenic route  of EverestBase Camp Trek Jiri. Has gives a sense of freedom and ecstasy that other treks can barely match.This Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people.",
     location: "Jiri, Nepal"
     },
     {
     id: 16,
     imgSrc:img17,
+    cln:'singletrek item-17',
     title: "Ghaley Gaun Trek",
     price: "$700",
     pricerange:"$500-$1000",
     days: "8-11 Days",
-    description: "Located at the lap of the Annapurna Trekking area, Ghale Gau (2,080m) is a village of the ethnic Gurung people. To reach his unique and culturally rich village we drive 179km from Kathmandu to the village of Khudi in Lamjung. From there we start our hike up the hills to Ghale Gaun. We also trek to Bhujung and return back to Pokhara and take a ride back to Kathmandu. Ghale Gaun Trek Home Stay provides new experiences to the Tourists.",
+    desc: "Located at the lap of the Annapurna Trekking area, Ghale Gau (2,080m) is a village of the ethnic Gurung people. To reach his unique and culturally rich village we drive 179km from Kathmandu to the village of Khudi in Lamjung. ",
     location: "Lamjung, Nepal"
     },
     {
     id: 17,
     imgSrc:img18,
+    cln:'singletrek item-18',
     title: "Jomsom Muktinath Trek",
     price: "$909",
     pricerange:"$500-$1000",
     days: "12-15 Days",
-    description: "Located in the Annapurna and Mustang region, Jomsom Muktinath Trek has a great blend of nature and culture. Moreover, From the beautiful snow-capped mountains to the ancient monasteries, Jomsom Muktinath is a package of epic magnitude.",
+    desc: "Located in the Annapurna and Mustang region, Jomsom Muktinath Trek has a great blend of nature and culture. Moreover, From the beautiful snow-capped mountains to the ancient monasteries, Jomsom Muktinath is a package of epic magnitude.",
     location: "Mustang, Nepal"
     },
 ]
