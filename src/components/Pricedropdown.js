@@ -40,7 +40,7 @@ return (<>
         }
         </Menu.Button>
         <Menu.Items className="dropdown-menu">
-            {prices.map((price,index)=>{
+            {prices.map((index)=>{
                 return(<Menu.Item as="li" key={index} className="dropdown--li" onClick={()=>setPrice(price.value)}>
                     {price.value}
             </Menu.Item>)
