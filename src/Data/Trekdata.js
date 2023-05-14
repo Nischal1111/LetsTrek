@@ -23,7 +23,7 @@ const TrekData =[
         imgSrc:"https://images.unsplash.com/photo-1668405409882-0b3a8b6fc912?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         title: 'Annapurna Base Camp Trek',
         location:'Kaski, Nepal',
-        days: '17-20 Days',
+        days: '15-20 Days',
         price: '$795',
         cln:'singletrek item-1',
         pricerange:"$500-$1000",
@@ -125,7 +125,7 @@ const TrekData =[
     price: "$2,500",
     pricerange:"$2000-$2500",
     cln:'singletrek item-10',
-    days: "17-20 Days",
+    days: "15-20 Days",
     desc: "Discover the ancient kingdom of Lo and its unique culture and landscapes, hidden behind the Himalayan peaksThis Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people..",
     location: "Mustang, Nepal"
     },  {
@@ -168,7 +168,7 @@ const TrekData =[
     price: "$1,500",
     cln:'singletrek item-14',
     pricerange:"$1500-$2000",
-    days: "17-20 Days",
+    days: "15-20 Days",
     desc: "Discover the remote Nar and Phu valleys and their unique Tibetan culture, set amidst stunning mountain scenery.This Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people.",
     location: "Kaski, Nepal"
     },
@@ -190,7 +190,7 @@ const TrekData =[
     cln:'singletrek item-16',
     price: "$1,405",
     pricerange:"$1000-$1500",
-    days: "15-18 Days",
+    days: "15-20 Days",
     desc: "The immense wilderness and the scenic route  of EverestBase Camp Trek Jiri. Has gives a sense of freedom and ecstasy that other treks can barely match.This Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people.",
     location: "Jiri, Nepal"
     },
