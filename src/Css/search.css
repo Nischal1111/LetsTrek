@@ -112,19 +112,19 @@
     padding: 20px;
     width: 400px;
     height: 600px;
-    border-radius: 14px;
+    border-radius: 16px;
     
 }
 .singletrek--img{
     height: 300px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, .2);
     width: 360px;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 .singlecontainer{
     display: flex;
     justify-content: space-between;
-    margin: .7rem .5rem;
+    margin: .7rem 0rem;
 }
 .singletrek--h1{
     color: black;
@@ -153,7 +153,6 @@
 .singletrek--para{
     font-size: 14px;
     text-align: justify;
-
 }
 .singlecontainer .fa-clock{
     margin-right: 5px;
@@ -161,7 +160,7 @@
 .Single--btn--p{
     display: flex;
     justify-content: space-between;
-    margin: 1rem .5rem;
+    margin: 1rem .2rem;
 }
 .Single--btn--p .singletrek--button{
     background-color: rgb(199, 217, 250);

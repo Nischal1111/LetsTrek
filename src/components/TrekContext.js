@@ -11,31 +11,37 @@ useEffect(()=>{
     const alltrekdays = trekking.map((singletrek)=>{
         return singletrek.days
     })
-    console.log(alltrekdays)
+    
     const uniquedays = ['Duration (any)', ...new Set(alltrekdays)]
 
-    console.log(uniquedays)
+    
 
     setTrekdays(uniquedays)
 },[])
 useEffect(()=>{
-    const allprices = trekking.map((singletrek)=>{
-        return singletrek.price
-    })
-    console.log(allprices)
-    const uniqueprice = ['Price range (any)', ...new Set (allprices)]
-    console.log(uniqueprice)
+    const allprices = trekking.price
+    // map((singletrek)=>{
+    //     return singletrek.price
+    // })
+    
+
+    const uniqueprice = ['Price in dollars ($)', ...new Set (allprices)]
+
+    
+
     setPrice(uniqueprice)
 },[])
 const handleClick = ()=>{
+
     const isDefault=(str)=>{
         return str.split(" ").includes("(any)")
     }
     console.log(isDefault(days))
 
+    const minPrice=parseInt(price.split(" ")[0]);
+    const maxPrice=parseInt(price.split(" ")[2]);
+    console.log(minPrice,maxPrice)
 
-    const minPrice=parseInt(price.split('')[0])
-    console.log(minPrice)
 }
 
 
