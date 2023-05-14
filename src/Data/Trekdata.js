@@ -90,7 +90,7 @@ const TrekData =[
     {
         id:6,
         imgSrc:img7,
-        title:'khopra Dada Trek',
+        title:'Khopra Dada Trek',
         location:'Khopra, Nepal',
         days:'8-11 Days',
         price:'$900',

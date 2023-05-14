@@ -1,11 +1,13 @@
 import React,{useState,useEffect,createContext} from 'react'
 import TrekData from '../Data/Trekdata'
 
+
 export const TrekContext = createContext();
 const TrekContextProvider = ({children}) => {
     const [trekking,setTrekking]= useState(TrekData)
     const [days,setDays]=useState("Duration (any)")
     const [trekdays,setTrekdays]=useState([])
+    const [loading,setLoading]=useState(false)
 
 
 useEffect(()=>{
@@ -20,6 +22,8 @@ useEffect(()=>{
 
 const handleClick = ()=>{
 
+    setLoading(true)
+
     const isDefault=(str)=>{
         return str.split(" ").includes("(any)")
     }
@@ -28,21 +32,24 @@ const handleClick = ()=>{
         if (trek.days==trekdays){
                 return trek;
             }
-        if (isDefault(days)){
+        
+            if (isDefault(days)){
             return trek;
         }
         if (!isDefault(days)){
             return trek.days===days;
         }
     });
-    console.log(newTreks) ;
-
-}
+    setTimeout(()=>{
+        return (newTreks < 1 ? setTrekking([]):setTrekking(newTreks),
+        setLoading(false)
+    )},1000)
+    }
 
 
 
 return (
-    <TrekContext.Provider value={{trekking,days,setDays,trekdays,setTrekdays,handleClick,
+    <TrekContext.Provider value={{trekking,days,setDays,trekdays,setTrekdays,handleClick,loading,setLoading
     }}>
         {children}
     </TrekContext.Provider>

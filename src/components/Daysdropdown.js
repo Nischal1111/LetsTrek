@@ -6,7 +6,6 @@ import { TrekContext } from './TrekContext'
 const Daysdropdown = () => {
     const {days,setDays,trekdays}=useContext(TrekContext)
     const [isOpen,setIsOpen]=useState(false)
-    console.log(trekdays)
 return (<>
     <Menu as="div" className="dropdown">
     <Menu.Button className="dropdown-btn" onClick={()=> setIsOpen(!isOpen)}>

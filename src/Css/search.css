@@ -93,42 +93,45 @@
     margin-bottom: 10px;
 }
 .container{
-    margin: 2rem;
     display: flex;
-    gap: 2.5rem;
+    margin: 0rem 2rem 1rem 1rem;
     flex-wrap: wrap;
     align-content: center;
     text-align: center;
+    width: 100%;
 }
 .no-line{
     text-decoration: none;
     color: gray;
-    
+    width: 50%;
 }
 .singletrek{
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    display: flex;
     text-decoration: none;
     background-color:rgb(253, 245, 253);
     box-shadow: 2px 4px 4px rgba(0,0,0,.1);
-    padding: 20px;
-    width: 400px;
-    height: 600px;
+    padding: 15px;
+    height: 330px;
     border-radius: 16px;
     
 }
 .singletrek--img{
     height: 300px;
+    margin-right: .5rem;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, .2);
-    width: 360px;
+    width: 300px;
     border-radius: 18px;
 }
 .singlecontainer{
     display: flex;
     justify-content: space-between;
-    margin: .7rem 0rem;
+    margin: 2rem 1rem;
 }
 .singletrek--h1{
     color: black;
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: 2px;
     font-weight: 200;
     margin: 1.2rem .5rem;
@@ -150,17 +153,13 @@
     padding: 6px 8px;
     border-radius: 8px;
 }
-.singletrek--para{
-    font-size: 14px;
-    text-align: justify;
-}
 .singlecontainer .fa-clock{
     margin-right: 5px;
 }
 .Single--btn--p{
     display: flex;
     justify-content: space-between;
-    margin: 1rem .2rem;
+    margin: 1rem .5rem;
 }
 .Single--btn--p .singletrek--button{
     background-color: rgb(199, 217, 250);
@@ -181,4 +180,19 @@
     transition: .3s all;
     background-color: #cfdef0;
     cursor: pointer;
+}
+.loading{
+    color: #314f73;
+    animation: spin 1s linear infinite;
+    margin: 200px 650px;
+    font-size: 40px;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }

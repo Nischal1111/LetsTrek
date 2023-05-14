@@ -8,7 +8,7 @@ import {motion,useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 const About = () => {
     
-    const {ref, inView}=useInView({threshold:0.3});
+    const {ref, inView}=useInView({threshold:0.7});
     const animation2 = useAnimation()
     useEffect(()=>{
         if(inView){
