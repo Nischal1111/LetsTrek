@@ -19,7 +19,6 @@ useEffect(()=>{
     setTrekdays(uniquedays)
 },[])
 
-
 const handleClick = ()=>{
 
     setLoading(true)
@@ -27,7 +26,6 @@ const handleClick = ()=>{
     const isDefault=(str)=>{
         return str.split(" ").includes("(any)")
     }
-
     const newTreks = TrekData.filter((trek) => {
         if (trek.days==trekdays){
                 return trek;
