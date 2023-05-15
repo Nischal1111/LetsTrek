@@ -12,13 +12,11 @@ const Home = () => {
 return (
     <>
     <motion.div initial={{opacity:0}} exit={{opacity:0}} animate={{opacity:1}} transition={{duration:.8,ease:'easeOut'}}>
-    <Navbar/>
     <Sign/>
     <Main/>
     <Destination/>
     <ExploreTreks/>
     <Gallery/>
-    <Foot/>
     </motion.div>
 </>
 )

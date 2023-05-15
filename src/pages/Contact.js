@@ -9,11 +9,9 @@ const Contact = () => {
   return (
     <>
     <motion.div initial={{opacity:0}} exit={{opacity:0}} animate={{opacity:1}} transition={{duration:.8,ease:"easeIn"}}>
-    <Navbar/>
     <Sign/>
     <ContactBody/>
 
-    <Foot/>
     </motion.div>
     </>
   )

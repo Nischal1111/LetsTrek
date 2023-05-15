@@ -18,8 +18,8 @@ return (
             <p>{desc}</p>
         </div> */}
         <div className='Single--btn--p'>
+            <p className='singletrek--p'> {price}</p>          
             <button className='singletrek--button'>See More...</button>
-            <p className='singletrek--p'> {price}</p>           
         </div>
         </div>
     </div>

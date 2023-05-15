@@ -6,11 +6,14 @@ import Contact from './pages/Contact';
 import Trekkings from './pages/Trekkings';
 import About from './pages/About';
 import TrekDetail from './pages/TrekDetail';
+import Navbar from './components/Navbar';
+import Foot from './components/Foot'
 
 
 function App() {
   return (<>
     <div className="App">
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/trek/:id' element={<TrekDetail/>}/>
@@ -18,7 +21,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/trekkings' element={<Trekkings/>}/>
       </Routes>
-      
+      <Foot/>
     </div>
   </>
   );

@@ -35,7 +35,6 @@ const About = () => {
 return (
     <>
     <motion.div className="about--main"initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:.8,ease:"easeIn"}}>
-    <Navbar/>
     <Sign/>
     <img  id="d" src='https://images.unsplash.com/photo-1533005346585-b131e79eef3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80'></img>
     <div className='About'>
@@ -72,7 +71,6 @@ return (
             )
         })}
     </div>
-    <Foot/>
     </motion.div>
     </>
 )

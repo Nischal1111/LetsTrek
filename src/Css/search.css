@@ -126,8 +126,8 @@
 }
 .singlecontainer{
     display: flex;
-    justify-content: space-between;
-    margin: 2rem 1rem;
+    flex-direction: column;
+    width: 100%;
 }
 .singletrek--h1{
     color: black;
@@ -144,10 +144,14 @@
     background-color: #314f73;
     padding: 6px 8px;
     border-radius: 8px;
+    width: 40%;
+    margin: 1rem ;
 }
 .singlecontainer .singletrek--days{
     font-size: 14px;
     font-weight: 200;
+    margin:  0rem 1rem 0rem 1rem ;
+    width: 40%;
     color: rgb(242, 233, 219);
     background-color: #82acdf;
     padding: 6px 8px;
@@ -158,19 +162,23 @@
 }
 .Single--btn--p{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 1rem .5rem;
 }
 .Single--btn--p .singletrek--button{
     background-color: rgb(199, 217, 250);
     padding:  10px;
+    width: 80%;
     font-size: 16px;
+    margin: .7rem 1.5rem;
+    margin-bottom: none;
     border-radius: 18px;
     color: rgb(10, 34, 56);
     border: none;
 }
 .Single--btn--p .singletrek--p{
     color: #314f73;
+    margin-bottom: 1rem;
     font-weight: 200;
     font-size: 24px;
     font-family: geneva;
