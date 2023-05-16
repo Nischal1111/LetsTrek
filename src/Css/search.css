@@ -105,13 +105,19 @@
     color: gray;
     width: 50%;
 }
+.singletrek:hover{
+    transform: translateY(-2px);
+    transition: .7s linear;
+    box-shadow: 8px 8px 11px rgba(33, 33, 33, .2)
+}
 .singletrek{
+    cursor: pointer;
     margin-bottom: 2rem;
     margin-right: 2rem;
     display: flex;
     text-decoration: none;
     background-color:rgb(253, 245, 253);
-    box-shadow: 2px 4px 4px rgba(0,0,0,.1);
+    box-shadow: 2px 4px 4px rgba(0,0,0,.2);
     padding: 15px;
     height: 330px;
     border-radius: 16px;
@@ -192,7 +198,7 @@
 .loading{
     color: #314f73;
     animation: spin 1s linear infinite;
-    margin: 200px 650px;
+    margin: 150px 650px;
     font-size: 40px;
 }
 @keyframes spin {
