@@ -1,10 +1,19 @@
+.section{
+    display: flex;
+}
+.left--div{
+    width: 65%;
+}
+.right--div{
+    width: 35%;
+}
 .detail{
     min-height: 700px;
-    margin: 8rem 6rem 14px 6rem;
+    margin: 8rem 0rem 14px 4rem;
 }
 .detail--img {
     height: 500px;
-    width: 60%;
+    width: 100%;
     border-radius: 14px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0,0.2);
 }
@@ -12,7 +21,7 @@
     margin-bottom: 8px;
 }
 .detail--info{
-    width: 60%;
+    width: 100%;
     border: 1px solid rgb(187, 195, 211);
     box-shadow: 0px 2px 2px rgba(0, 0, 0,0.2);
     border-radius: .5rem;
@@ -77,8 +86,8 @@
 }
 .review{
     color: #0c386e;
-        margin: 2rem 0rem 2rem 6rem;
-    width: 52%;
+        margin: 2rem 0rem 2rem 0rem;
+    width: 100%;
         border: 1px solid rgb(187, 195, 211);
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
         border-radius: .5rem;
@@ -86,6 +95,7 @@
 .review--input{
     margin: 2rem 0rem 2rem 1.5rem;
     padding: .7rem;
+    font-size: 20px;
     border: 1px solid gray;
     border-radius: 2rem;
     width: 90%;
@@ -117,4 +127,27 @@
     transform: scale(.9);
     background-color: #2a5282;
 }
-
+.rev--item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    column-gap: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.rev--item img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.rev--item h5{
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 1rem;
+    color: #314f73;
+}
+.rev--name{
+    font-size: 22px;
+    font-weight: 200;
+}
