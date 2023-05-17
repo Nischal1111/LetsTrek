@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../Css/Navbar.css'
-import {Menu} from './Menu';
+import {Menu} from '../Data/Menu';
 import {Link} from 'react-router-dom';
 import { useSignContext } from './Context'
 

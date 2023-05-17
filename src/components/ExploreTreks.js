@@ -1,6 +1,6 @@
 import React, { useState,useRef,useEffect } from 'react'
 import '../Css/Explore.css'
-import PlaceData from './PlaceData'
+import PlaceData from '../Data/PlaceData'
 import {GrLinkNext,GrLinkPrevious} from "react-icons/gr";
 
 const ExploreTreks = () => {

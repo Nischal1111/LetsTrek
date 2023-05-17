@@ -62,10 +62,10 @@ return (<>
         <h3>Send us Message</h3>
         <div className='contact--form'>
             <form action='https://formspree.io/f/meqwnega' method='POST'>
-                <input placeholder='Enter your Username' name='username' type='text' autoComplete='off' required/>
-                <input placeholder='Enter your E-mail' name='Email' type='email' autoComplete='off' required/>
+                <input className='contact--input' placeholder='Enter your Username' name='username' type='text' autoComplete='off' required/>
+                <input className='contact--input' placeholder='Enter your E-mail' name='Email' type='email' autoComplete='off' required/>
                 <textarea name='message' placeholder='Enter your message' cols='30'rows='6' autoComplete='off' required></textarea>
-            <input type='submit' value='send'></input>
+            <input type='submit' value='send' className='contact--btn'></input>
             </form>
         </div>
     </div>

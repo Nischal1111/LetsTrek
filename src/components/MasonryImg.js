@@ -1,5 +1,5 @@
 import React from 'react'
-import ImgGallery from './Imgglry';
+import ImgGallery from '../Data/Imgglry';
 import Masonry,{ResponsiveMasonry} from "react-responsive-masonry";
 
 const MasonryImg = () => {

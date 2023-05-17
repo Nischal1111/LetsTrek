@@ -26,7 +26,7 @@ return (
         </div>
 
     </section>
-  )
+)
 }
 
 export default Treklist

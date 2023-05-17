@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import '../Css/Main.css';
-import Homedata from './Homedata';
+import Homedata from '../Data/Homedata';
 
 
 const Main = () => {

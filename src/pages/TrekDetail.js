@@ -38,7 +38,8 @@ const TrekDetail = () => {
     console.log(trek)
     const format = {day:'numeric',month:"long",year:"numeric"}
     return (<>
-        <section>
+        <section className='.trek--section'>
+            <main className='main--div'>
             <main className='left--div'>
             <div className="detail">
                 <div className='detail--img--div'>
@@ -48,11 +49,11 @@ const TrekDetail = () => {
                         <h2 className='detail--title'>{trek.title}</h2>
                     <div className='detail--rating'>
                         <span className='rate'>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span><i class="fa-solid fa-star-half-alt"></i>4.6 (13)</span>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <span><i className="fa-solid fa-star-half-alt"></i>4.6 (13)</span>
                         </span> 
                         <span style={{marginLeft:"70px",fontSize:"22px",fontWeight:"200"}} className='detail--location'>
                             <i className="fa-solid fa-location-dot" style={{marginRight:"10px"}}></i>{trek.location}
@@ -74,19 +75,19 @@ const TrekDetail = () => {
                 <form onSubmit={submithandler}>
                     <div className='rev--div'>
                         <span onClick={()=>setTourRate(1)}>
-                            1 <i class="fa-solid fa-star"></i>
+                            1 <i className="fa-solid fa-star"></i>
                         </span >
                         <span onClick={()=>setTourRate(2)}>
-                            2 <i class="fa-solid fa-star"></i>
+                            2 <i className="fa-solid fa-star"></i>
                         </span>
                         <span onClick={()=>setTourRate(3)}>
-                            3 <i class="fa-solid fa-star"></i>
+                            3 <i className="fa-solid fa-star"></i>
                         </span>
                         <span onClick={()=>setTourRate(4)}>
-                            4 <i class="fa-solid fa-star"></i>
+                            4 <i className="fa-solid fa-star"></i>
                         </span>
                         <span onClick={()=>setTourRate(5)}>
-                            5 <i class="fa-solid fa-star"></i>
+                            5 <i className="fa-solid fa-star"></i>
                         </span>
                     </div>
                     <div className="review--input">
@@ -104,7 +105,7 @@ const TrekDetail = () => {
                                     <p style={{fontSize:"14px",color:"#0c386e"}}>{new Date("05-15-2023").toLocaleDateString("en-US", format)}</p>
                                 </div>
                                 <span style={{display:"flex",alignItems:"center"}}>
-                                    5 <i class="fa-solid fa-star"></i>
+                                    5 <i className="fa-solid fa-star"></i>
                                 </span>
                             </div>
                             <h5>Was a thrilling adventure !!!</h5>
@@ -114,8 +115,9 @@ const TrekDetail = () => {
             </div>
             </div>
             </main>
-            <main className='right-div'>
-                
+            <main className='right--div'>
+                <Booking trek={trek}/>
+            </main>
             </main>
         </section>
     </>)
