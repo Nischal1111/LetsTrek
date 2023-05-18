@@ -6,9 +6,10 @@
     margin: 8rem 0rem 14px 2rem;
 }
 .right--div{
-    width: 25%;
-    margin-left: 4rem;
+    width: 35%;
+    margin-left: 2rem;
     margin-top: 8rem;
+    margin-right: 1rem;
 }
 .detail{
     min-height: 700px;    

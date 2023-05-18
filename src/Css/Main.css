@@ -13,27 +13,27 @@ img{
 .content{
 position: absolute;
 width: 100%;
-top: 55%;
+top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 text-align: center;
 }
 .content h1{
-    font-size: 80px;
-    font-weight: 600;
+    font-size: 60px;
+    font-weight: 200;
     width: 100%;
-    color: #fdfad3;
+    color: var(--primary--color);
     letter-spacing: 10px;
     text-transform: uppercase;
 }
 .content p{
-    font-size: 35px;
+    font-size: 25px;
     padding: 20px 18px;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 6px;
-    color: #fdfad3;
+    color: black;
 }
 .content .show{
     background-color: gray;
@@ -41,15 +41,18 @@ text-align: center;
     border:none;
     font-size: 1.4rem;
     letter-spacing: 4px;
-    margin-top:18px;
-    padding: 1rem 2rem;
+    margin-top:1.5rem;
+    padding: 1.5rem 2.2rem;
     text-decoration: none;
-    border-radius: 12px;
-    font-weight: 700;
+    border-radius: 8px;
+    font-weight: 300;
+    
 }
 .content .show:hover{
-    color: #222;
-    background-color: #01959a;
+    color:#e4e4e4;
+    transform: scale(.9);
+    transition: .5s all;
+    background-color:black;
     cursor: pointer;
 }
 article{
