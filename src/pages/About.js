@@ -17,7 +17,7 @@ const About = () => {
                 transition:{
                     type:"spring",
                     duration:1,
-                    bounce:.3,
+                    bounce:.2,
                     
 
                 }
@@ -36,7 +36,7 @@ return (
     <>
     <motion.div className="about--main"initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:.8,ease:"easeIn"}}>
     <Sign/>
-    <img  id="d" src='https://images.unsplash.com/photo-1533005346585-b131e79eef3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80'></img>
+    <img  id="d" src='https://images.unsplash.com/photo-1513569771920-c9e1d31714af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80'></img>
     <div className='About'>
     <h1>Know about us</h1>
     <p>We are always here for you</p>

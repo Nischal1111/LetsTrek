@@ -7,7 +7,7 @@ import {FiMail} from 'react-icons/fi'
 
 const ContactBody = () => {
 return (<>
-    <img className='Contactimg' src='https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80'/>
+    <img className='Contactimg' src='https://images.pexels.com/photos/15421709/pexels-photo-15421709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'/>
     <div className='contacthead'>
     <h1>Feel free to contact us</h1>
     <p>We are here to provide you the best service</p>
@@ -65,12 +65,12 @@ return (<>
                 <input className='contact--input' placeholder='Enter your Username' name='username' type='text' autoComplete='off' required/>
                 <input className='contact--input' placeholder='Enter your E-mail' name='Email' type='email' autoComplete='off' required/>
                 <textarea name='message' placeholder='Enter your message' cols='30'rows='6' autoComplete='off' required></textarea>
-            <input type='submit' value='send' className='contact--btn'></input>
+            <input type='submit' value='Send' className='contact--btn'></input>
             </form>
         </div>
     </div>
     <div className='plan'>
-    <img className='img2'src='https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80'></img>
+    <img className='img2'src='https://images.pexels.com/photos/3599174/pexels-photo-3599174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'></img>
     <div className='startplan'>
             <h2>Hike your own hike</h2>
             <button  className='plan--button'><a href='/trekkings'>Start Hiking</a></button>

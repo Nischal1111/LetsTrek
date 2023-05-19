@@ -1,6 +1,6 @@
 .destination{
     margin: 2rem;
-    background-color: #2a2a2c;
+    background-color: #282828;
     padding: 10px 20px;
     box-shadow: 0px 4px 6px rgba(23, 20, 20, 0.1);
     border-radius: 18px;
@@ -27,12 +27,13 @@
 .dest-first{
     margin-top: 4.5rem;
     display: flex;
-    color: rgb(216, 214, 214);
+    color: #d2f3ff;
     text-align: justify;
     align-items: center;
     justify-content: space-between;
 }
 .dest-first-reverse{
+    color: #d2f3ff;
     margin-top: 4.5rem;
     display: flex;
     flex-direction: row-reverse;

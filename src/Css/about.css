@@ -6,7 +6,7 @@
     overflow-x: hidden;
 }
 #d{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     object-fit: cover;
 }
@@ -19,8 +19,9 @@
     text-align: center;
 }
 .About h1{
-    font-size: 70px;
-    letter-spacing: 4px;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 .About p{
@@ -30,8 +31,7 @@
 .abouttext{
 
     margin: 2rem 1rem;
-    background-color: #d7d7ec;
-    /* box-shadow: 4px 4px 4px rgba(0,0,0,.1); */
+    background-color:#161618;
     padding: 4rem 6rem;
     display: flex;
     justify-content: space-between;
@@ -40,14 +40,14 @@
 .abouttext .text{
     width: 50%;
     text-align: justify;
-    color: #024b4d;
+    color: #d2f3ff;
 }
 .abouttext h1{
     text-align: start;
     font-size: 40px;
     letter-spacing: 2px;
-    color: #01777b;
-    border-bottom: 5px rgb(212, 169, 139) solid;
+    color: #d2f3ff;
+    border-bottom: 5px rgb(151, 102, 66) solid;
 }
 .feature{
     display: flex;
@@ -59,26 +59,27 @@
 }
 .single{
     padding: 20px;
-    background-color:#d7d7ec;
+    background-color:rgb(20, 18, 18);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, .3);
     width: 40%;
     margin: 10px;
     border-radius: 18px;
 }
 .single i{
-    color:#024b4d;
+    color:#d2f3ff;
     font-size: 30px;
 }
 .single h3{
-    font-size: 34px;
-    margin: 20px 20px;
-    color: #01777b;
+    font-size: 32px;
+    margin: 20px;
+    font-weight: 300;
+    color: #d2f3ff;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 .single p{
     font-size: 16px;
-    color: #01777b;
+    color: var(--font--color);
     text-align: justify;
 }
 @media screen and (max-width:930px) {

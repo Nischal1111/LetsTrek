@@ -1,6 +1,5 @@
 import React from 'react'
 import '../Css/trekkingbody.css'
-import trekimg from "../assets/trek.jpeg"
 import Search from './Search'
 import Treklist from './Treklist'
 
@@ -8,7 +7,7 @@ const Trekkingbody = () => {
   return (
     <div className='trekking'>
       <div className='trekimg'>
-        <img src={trekimg}></img>
+        <img src="https://img.freepik.com/free-photo/misty-landscape-with-forest-covered-with-fog-dark-storm-clouds_181624-25465.jpg?w=996&t=st=1684497434~exp=1684498034~hmac=f41459e92a7e70c5141f6738dab5cc622972001b16a69791a4b36be9c7c2c6e2"></img>
       </div>
       <div className='trektext'>
         <h1>Trekking &<br></br>Activites</h1>

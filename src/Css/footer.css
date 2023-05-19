@@ -1,7 +1,7 @@
 .footer{
     padding: 2rem 4rem;
-    background-color: #2d2d2e;
-    color: #e4e4e4;
+    background-color: #0a0a11;
+    color:#e6f5fb;
 }
 .top{
     display: flex;
@@ -12,6 +12,7 @@
 }
 .top div h1{
     font-size: 50px;
+    font-weight: 300;
 }
 .top div p{
     font-size: 30px;

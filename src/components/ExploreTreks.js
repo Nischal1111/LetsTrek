@@ -25,8 +25,8 @@ return (
     </div>
     <div className='exploreslider'>
         <div className='btn-container'>
-        <button className='prev' onClick={()=>{onClick('prev')}} disabled={card>=0}><GrLinkPrevious/></button> 
-        <button  className='next' onClick={()=>{onClick('next')}} disabled={card<=-1300}><GrLinkNext/></button>
+        <button className='prev' onClick={()=>{onClick('prev')}} disabled={card>=0}><GrLinkPrevious className='prev--btn'/></button> 
+        <button  className='next' onClick={()=>{onClick('next')}} disabled={card<=-1300}><GrLinkNext className='next--btn'/></button>
         </div>
     <div className='innerslider' ref={ref}>
     {PlaceData.map((place)=>{

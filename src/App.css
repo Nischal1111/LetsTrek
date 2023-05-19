@@ -6,10 +6,11 @@
     
 }
 :root{
-    --background-color:rgb(52, 51, 51);
+    --background-color:#1e1e21;
     --font--color:#DDDDDD;
     --h1:#F7F5EB;
     --primary--color:#181616;
+    --main--color:#d2f3ff;
 
 }
 body{
