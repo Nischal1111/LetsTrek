@@ -101,11 +101,11 @@ const TrekDetail = () => {
                         <div style={{width:"100%"}}>
                             <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                                 <div className='rev--name'>
-                                    <h3 style={{fontWeight:"200",fontSize:"22px",color:" #314f73"}}>Nischal Dai</h3>
-                                    <p style={{fontSize:"14px",color:"#0c386e"}}>{new Date("05-15-2023").toLocaleDateString("en-US", format)}</p>
+                                    <h3 style={{fontWeight:"200",fontSize:"22px",color:"azure"}}>Nischal Dai</h3>
+                                    <p style={{fontSize:"14px",color:"darkgrey"}}>{new Date("05-15-2023").toLocaleDateString("en-US", format)}</p>
                                 </div>
                                 <span style={{display:"flex",alignItems:"center"}}>
-                                    5 <i className="fa-solid fa-star"></i>
+                                    5 <i className="fa-solid fa-star" style={{marginLeft:"10px"}}></i>
                                 </span>
                             </div>
                             <h5>Was a thrilling adventure !!!</h5>

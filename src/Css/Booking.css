@@ -1,0 +1,52 @@
+.booking{
+    position: sticky;
+    padding: 2rem 1rem 1.5rem 1rem;
+    top: 80px;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.form--form{
+    margin-top: .5rem;
+
+}
+.booking-form h4{
+    text-align: center;
+    font-weight: 200;
+    margin: 1rem 0rem;
+    font-size: 24px;
+    color: var(--h1);
+}
+.booking-form .form--form input{
+    width: 100%;
+    padding: .5rem;
+    color: var(--main--color);
+    background-color: var(--background--color);
+    font-size: 16px;
+    border: none;
+    margin: .2rem 0rem .7rem 0rem;
+    border-bottom: .5px solid whitesmoke;
+    outline: none;
+}
+.form--form input::placeholder{
+    color: darkgray;
+}
+.booking-form .form--form label{
+    font-size: 20px;
+    color: var(--main--color);
+}
+.form--date{
+    display: flex;
+    width: 100%;
+}
+.form--date #book{
+    width: 100%;
+    color: aliceblue;
+    margin: 0rem;
+}
+.form--date #group{
+    width: 100%;
+    color: aliceblue;
+    margin: 0rem;
+}

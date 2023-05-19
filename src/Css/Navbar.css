@@ -45,20 +45,22 @@
     font-weight: 800;
     color: #F7F6F2;
     letter-spacing: 2px;
-    padding:  0.5rem 1rem;
+    padding:  10px 14px;
+    margin: 0px 10px;
     font-weight: 700;
     white-space: nowrap;
     text-transform: uppercase;
+    transition: all 1s;
 
 }
 .nav-link i{
     padding-right: 10px;
 }
 .nav-link:hover{
-    color: #bdbcbc;
-    transition: all .2s ease-in-out;
-    /* border-bottom: 2px solid #1dc3c8 ;
-    border-right: 2px groove #1dc3c8 ; */
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    transition: all 1s;
     border-bottom: 2px solid rgb(195, 193, 193);
 }
 .nav-mobile{
