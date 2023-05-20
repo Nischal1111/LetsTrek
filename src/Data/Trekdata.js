@@ -20,7 +20,7 @@ import img18 from '../assets/img18.jpeg';
 const TrekData =[
         {
         id:0,
-        imgSrc:"https://images.unsplash.com/photo-1668405409882-0b3a8b6fc912?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        imgSrc:"https://images.unsplash.com/photo-1662291767880-1cff162684be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1776&q=80",
         title: 'Annapurna Base Camp Trek',
         location:'Kaski, Nepal',
         days: '15-20 Days',

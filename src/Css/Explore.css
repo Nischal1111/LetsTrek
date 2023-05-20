@@ -54,6 +54,8 @@ padding: 1rem 0 ;
     background-color: rgb(45,45,45);
     border-radius: 18px;
     position: relative;
+    outline:1px solid black;
+    outline-offset: -.5rem;
     padding: 1.5rem;
     cursor: pointer;
     height: 560px;

@@ -13,9 +13,7 @@ root.render(
     <TrekContextProvider>
   <BrowserRouter>
   <AppProvider>
-
     <App />
-
     </AppProvider>
   </BrowserRouter>
   </TrekContextProvider>
