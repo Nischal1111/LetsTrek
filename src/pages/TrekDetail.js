@@ -2,7 +2,7 @@ import React,{useRef,useState} from 'react'
 import "../Css/TrekDetail.css"
 
 import avatar from "../assets/avatar.jpg"
-
+import Sign from  "../components/Sign"
 import TrekData from '../Data/Trekdata'
 import Booking from '../components/Booking'
 
@@ -38,6 +38,7 @@ const TrekDetail = () => {
     console.log(trek)
     const format = {day:'numeric',month:"long",year:"numeric"}
     return (<>
+    <Sign/>
         <section className='.trek--section'>
             <main className='main--div'>
             <main className='left--div'>
