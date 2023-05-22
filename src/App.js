@@ -8,6 +8,7 @@ import About from './pages/About';
 import TrekDetail from './pages/TrekDetail';
 import Navbar from './components/Navbar';
 import Foot from './components/Foot'
+import Thankyou from './pages/Thankyou';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/trek/:id' element={<TrekDetail/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/thank-you' element={<Thankyou/>}/>
         <Route path='/trekkings' element={<Trekkings/>}/>
       </Routes>
       <Foot/>

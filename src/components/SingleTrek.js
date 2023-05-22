@@ -19,7 +19,7 @@ return (
             <p>{desc}</p>
         </div> */}
         <div className='Single--btn--p'>
-            <p className='singletrek--p'> {price}</p>  
+            <p className='singletrek--p'>$ {price}</p>  
             <Link to={`/trek/${singleTrek.id}`}>       
             <button className='singletrek--button'>See More...</button>
             </Link>

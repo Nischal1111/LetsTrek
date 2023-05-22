@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import "../Css/Booking.css"
+import { useNavigate } from 'react-router-dom'
 
 
 const Booking = ({trek}) => {
@@ -9,26 +10,35 @@ const Booking = ({trek}) => {
         fullName:"",
         phone:"",
         email:"",
-        group:"1",
+        group:1,
         book:""
     })
+    const navigate=useNavigate()
+    const serviceFee = 10;
+    const total = Number(serviceFee)+ Number(user.group)* Number(trek.price)
 
     const handleChange=(e)=>{
         setUser(prev=>({... prev, [e.target.id]:e.target.value}))
 
     }
 
+    const handleClick=(e)=>{
+        e.preventDefault()
+
+        navigate("/thank-you")
+        
+    }
 return (
     <div className='booking'>
         <div className="booking--top" style={{display:"flex", alignItems:"center", justifyContent:"space-between",marginTop:".7rem"}}>
-            <h3 style={{fontFamily:"geneva",color:"aliceblue",fontSize:"24px"}}>{trek.price}</h3>
+            <h3 style={{fontFamily:"geneva",color:"aliceblue",fontSize:"24px"}}>$ {trek.price}</h3>
             <span className='rate'>
                 <span><i className="fa-solid fa-star"></i>4.6 (13)</span>
             </span> 
         </div>
         <div className='booking-form'>
             <h4>Register for Trek</h4>
-            <form className='form--form'>
+            <form className='form--form' onSubmit={handleClick}>
                 <label>Full Name</label><br/>
                 <input required type='text' id='fullname' placeholder='Full Name' onChange={handleChange} autoComplete='off'/><br/>
                 <label>E-mail</label><br/>
@@ -49,18 +59,18 @@ return (
         </div>
         <div className="booking-bottom">
             <div className='head' style={{display:"flex",alignItems:"center" ,gap:"1", justifyContent:"space-between"}}>
-                <h5 style={{color:"var(--main--color)",fontWeight:"200",fontSize:"1.2rem",display:"flex",marginBottom:".7rem"}}>{trek.price}<i class="fa-solid fa-xmark" style={{marginRight:"15px",marginLeft:"15px"}}></i>per person</h5>
-                <span style={{fontFamily:"Geneva",color:"Pink",marginRight:"1rem"}}>{trek.price}</span>
+                <h5 style={{color:"var(--main--color)",fontWeight:"200",fontSize:"1rem",display:"flex",marginBottom:".7rem", fontFamily:"Geneva"}}>$ {trek.price}<i class="fa-solid fa-xmark" style={{marginRight:"15px",marginLeft:"15px", fontSize:"20px"}}></i>per person</h5>
+                <span style={{fontFamily:"Geneva",color:"Pink",marginRight:"1rem"}}>$ {trek.price}</span>
             </div>
             <div className='mid' style={{display:"flex",alignItems:"center" ,gap:"1",justifyContent:"space-between"}}>
                 <h5 style={{color:"var(--main--color)",fontWeight:"200",fontSize:"1.2rem",display:"flex",marginBottom:".7rem"}}>Service Charge</h5>
-                <span style={{fontFamily:"Geneva",color:"Pink",marginRight:"1rem"}}>$ 10</span>
+                <span style={{fontFamily:"Geneva",color:"Pink",marginRight:"1rem"}}>$ {serviceFee}</span>
             </div>
             <div className='bottom' style={{paddingTop: "10px"}}>
                 <h5 style={{color:"var(--main--color)",fontWeight:"700",fontSize:"1.6rem",display:"flex",marginBottom:".7rem"}}>Total</h5>
-                <span style={{fontWeight:"700",fontFamily:"Geneva",color:"Pink",marginRight:"1rem",fontSize:"1.4rem"}}>$ 234</span>
+                <span style={{fontWeight:"700",fontFamily:"Geneva",color:"Pink",marginRight:"1rem",fontSize:"1.4rem"}}>$ {total}</span>
             </div>
-            <button>Register Now</button>
+            <button onClick={handleClick}>Register Now</button>
         </div>
     </div>
 )

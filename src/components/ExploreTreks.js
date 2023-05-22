@@ -38,7 +38,7 @@ return (
                     <h3>{title}</h3>
                     <div className='pl'>
                         <div className='location'><i className="fa-solid fa-map-pin"></i>{location}</div>
-                        <p>{price}</p>
+                        <p>$ {price}</p>
                     </div>
                     <p className='desc'>{desc}</p>
                     <p className='time'><i className="fa-solid fa-clock"></i>{days}</p>
