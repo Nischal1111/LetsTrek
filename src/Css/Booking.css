@@ -54,4 +54,31 @@
     color: aliceblue;
     margin: 0rem;
 }
-
+.booking-bottom button{
+    border: 1px solid black;
+    padding:12px 18px;
+    color:#eee;
+    background-color:gray;
+    border-radius:20px;
+    font-size:20px;
+    letter-spacing:.5px;
+    width:50%;
+        margin-left: 5rem;
+    margin-top: 1rem;
+}
+.booking-bottom .bottom{
+    display: "flex";
+    align-items:"center";
+    gap:"1";
+    border-bottom: 1px solid aliceblue;
+    border-top: 1px solid aliceblue;
+    justify-content:"space-between";
+    padding: 0;
+}
+.booking-bottom button:hover{
+    transform: scale(1.1);
+    border: 1px solid whitesmoke;
+    background-color: black;
+    color: lavender;
+    transition: .4s all;
+}

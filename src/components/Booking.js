@@ -1,11 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "../Css/Booking.css"
 
 
 const Booking = ({trek}) => {
-    console.log(trek)
+    const [user,setUser]=useState({
+        userId:"1",
+        userEmail:"example",
+        fullName:"",
+        phone:"",
+        email:"",
+        group:"1",
+        book:""
+    })
 
     const handleChange=(e)=>{
+        setUser(prev=>({... prev, [e.target.id]:e.target.value}))
 
     }
 
@@ -39,17 +48,17 @@ return (
             </form>
         </div>
         <div className="booking-bottom">
-            <div>
-                <h5>{trek.price}<i class="fa-solid fa-xmark"></i>per person</h5>
-                <span>{trek.price}</span>
+            <div className='head' style={{display:"flex",alignItems:"center" ,gap:"1", justifyContent:"space-between"}}>
+                <h5 style={{color:"var(--main--color)",fontWeight:"200",fontSize:"1.2rem",display:"flex",marginBottom:".7rem"}}>{trek.price}<i class="fa-solid fa-xmark" style={{marginRight:"15px",marginLeft:"15px"}}></i>per person</h5>
+                <span style={{fontFamily:"Geneva",color:"Pink",marginRight:"1rem"}}>{trek.price}</span>
             </div>
-            <div>
-                <h5>Service Charge</h5>
-                <span>$ 10</span>
+            <div className='mid' style={{display:"flex",alignItems:"center" ,gap:"1",justifyContent:"space-between"}}>
+                <h5 style={{color:"var(--main--color)",fontWeight:"200",fontSize:"1.2rem",display:"flex",marginBottom:".7rem"}}>Service Charge</h5>
+                <span style={{fontFamily:"Geneva",color:"Pink",marginRight:"1rem"}}>$ 10</span>
             </div>
-            <div>
-                <h5>Total</h5>
-                <span>$ 234</span>
+            <div className='bottom' style={{paddingTop: "10px"}}>
+                <h5 style={{color:"var(--main--color)",fontWeight:"700",fontSize:"1.6rem",display:"flex",marginBottom:".7rem"}}>Total</h5>
+                <span style={{fontWeight:"700",fontFamily:"Geneva",color:"Pink",marginRight:"1rem",fontSize:"1.4rem"}}>$ 234</span>
             </div>
             <button>Register Now</button>
         </div>
