@@ -13,6 +13,7 @@
     --main--color:#d2f3ff;
 
 }
+
 body{
     background-color:var(--background-color);
     color:var(--font--color);

@@ -1,0 +1,53 @@
+.thank{
+    background-color: var(--background-color);
+    height: 80vh;
+    margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+}
+.thank h1{
+    font-size: 80px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-family: cedarville cursive;
+    text-align: start;
+    color: var(--main--color);
+}
+.thank .icon{
+    font-size: 5rem;
+    color: var(--main--color);
+}
+.thank button{
+    padding: 14px 20px;
+    border-radius: 18px;
+    background-color: black;
+    border: 1px solid black;
+    font-size: 18px;
+    margin: 1.2rem;
+    color: white;
+}
+.thank .p1{
+    font-size: 30px;
+    font-weight: 100;
+        font-family: cedarville cursive;
+    color: azure;
+    text-align: start;
+    letter-spacing: 2px;
+}
+.thank .p2{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: start;
+    
+    color: azure;
+    margin-top: .5rem;
+}
+.thank button:hover{
+    transform: scale(1.1);
+    border: 1px solid whitesmoke;
+    transition: .4s all;
+    
+}
