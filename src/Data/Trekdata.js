@@ -31,7 +31,7 @@ const TrekData =[
     },
     {
         id:1,
-        imgSrc:img2,
+        imgSrc:"https://images.unsplash.com/photo-1515254659578-05589240f7b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1060&q=80",
         title:'Langtang Gosaikunda Trek',
         location:'Rasuwa, Nepal',
         days:'8-11 Days',

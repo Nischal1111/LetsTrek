@@ -33,7 +33,7 @@ return (<>
         animate={animation}
             
         >
-        <h1> <i className="fa-solid fa-location-dot"></i>Popular Treks</h1>
+        <h1> <i className="fa-solid fa-location-dot"></i>Popular <span> Treks</span></h1>
         <p>Trek with us to all these fun places</p>
         <Destinationdata  className='dest-first' head='KHUMAI DADA TREK'
         text='Khumai Dada is located on the North side of Pokhara and elevates at an altitude of 3245m. The Hill lies on 
