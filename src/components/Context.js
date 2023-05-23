@@ -10,7 +10,8 @@ const AppProvider=({children})=>{
     const closeSignup=()=>{
         setIsSignupOpen(false)
     }
-    return <AppContext.Provider value={{isSignupOpen,openSignup,closeSignup}}>{children}</AppContext.Provider>
+    return (<AppContext.Provider value={{isSignupOpen,openSignup,closeSignup}}>{children}</AppContext.Provider>
+    )
 }
 
 export const useSignContext=()=>{

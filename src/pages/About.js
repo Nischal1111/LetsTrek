@@ -6,6 +6,7 @@ import Aboutdata from '../Data/Aboutdata';
 import Sign from '../components/Sign';
 import {motion,useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import Award from '../components/Award';
 const About = () => {
     
     const {ref, inView}=useInView({threshold:0.7});
@@ -72,6 +73,7 @@ return (
         })}
     </div>
     </motion.div>
+    <Award/>
     </>
 )
 }

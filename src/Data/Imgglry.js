@@ -26,4 +26,5 @@ const ImgGallery = [
     gi12,
     gi5,
 ]
-export default ImgGallery
+
+export default ImgGallery;

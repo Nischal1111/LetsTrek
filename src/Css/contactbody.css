@@ -75,17 +75,17 @@
     display: flex;
 }
 .contact--methods div{
-    background-color:black;
+    background-color:var(--background-color);
     cursor: pointer;
     margin: 1.5rem 3rem;
-    border-radius: 30px;
+    border-radius: 18px;
+    border: .1px solid whitesmoke;
     padding: 2rem; 
-    box-shadow: 2px 4px 4px rgba(0,0,0,.1);
+    box-shadow: 4px 8px 4px rgb(50, 50, 50);
 }
 .contact--methods div:hover {
     top: -4px;
     transition: 1s linear;
-    box-shadow: 8px 8px 11px rgba(33, 33, 33, .2)
 }
 .contacticons{
     font-size: 35px;

@@ -19,14 +19,21 @@ const Booking = ({trek}) => {
 
     const handleChange=(e)=>{
         setUser(prev=>({... prev, [e.target.id]:e.target.value}))
-
     }
 
     const handleClick=(e)=>{
         e.preventDefault()
+        if(notValid()){
+            
+            alert("Please fill out the form completely.")
 
-        navigate("/thank-you")
-        
+        }else{
+            navigate("/thank-you")
+        }
+    }
+    const notValid=()=>{
+        const { fullName, phone, email, book } = user;
+    return fullName== '' && phone== '' && email== '' && book== '';
     }
 return (
     <div className='booking'>
@@ -55,8 +62,6 @@ return (
                     <input required placeholder='' type='number' id='group' onChange={handleChange} autoComplete='off' /><br/><br/>
                     </div>
                 </div>  
-            </form>
-        </div>
         <div className="booking-bottom">
             <div className='head' style={{display:"flex",alignItems:"center" ,gap:"1", justifyContent:"space-between"}}>
                 <h5 style={{color:"var(--main--color)",fontWeight:"200",fontSize:"1rem",display:"flex",marginBottom:".7rem", fontFamily:"Geneva"}}>$ {trek.price}<i class="fa-solid fa-xmark" style={{marginRight:"15px",marginLeft:"15px", fontSize:"20px"}}></i>per person</h5>
@@ -70,7 +75,9 @@ return (
                 <h5 style={{color:"var(--main--color)",fontWeight:"700",fontSize:"1.6rem",display:"flex",marginBottom:".7rem"}}>Total</h5>
                 <span style={{fontWeight:"700",fontFamily:"Geneva",color:"Pink",marginRight:"1rem",fontSize:"1.4rem"}}>$ {total}</span>
             </div>
-            <button onClick={handleClick}>Register Now</button>
+            <button type='submit' onClick={handleClick}>Register Now</button>
+        </div>
+            </form>
         </div>
     </div>
 )

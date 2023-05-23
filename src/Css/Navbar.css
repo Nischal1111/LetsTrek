@@ -7,8 +7,9 @@
     width: 99%;
     left:50%;
     transform: translate(-50%); 
-    border-radius:8px ;
+    border-radius:10px ;
     height: 70px;
+    color: #020b0b;
     background-color:#0a0a11;
     position: fixed;
     z-index: 100;
@@ -63,6 +64,7 @@
     transition: all 1s;
     border-bottom: 2px solid rgb(195, 193, 193);
 }
+
 .nav-mobile{
     display: none;
 }

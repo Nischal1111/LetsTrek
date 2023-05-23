@@ -1,0 +1,45 @@
+.award{
+    background-color: #03070b;
+    color: var(--main--color);
+    text-align: center;
+    margin: 2rem 1rem;
+    height: 80vh;
+    padding: 2rem .7rem;
+    border-radius: 18px;
+}
+.award--container{
+    padding: .5rem;
+    display: grid;
+    margin: 2rem;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.award--box{
+    margin-top: 3rem;
+}
+.award--box h4{
+    font-size: 24px;
+    color: rgb(136, 139, 141);
+    font-weight: 100;
+}
+.award--box p{
+    font-weight: 700;
+    font-size: 32px;
+    font-family: geneva;
+}
+.award--box .award--icon{
+    cursor: pointer;
+    font-size: 7rem;
+    background-color: #5e767e;
+    padding: 1.7rem;
+    color: var(--main--color);
+    line-height: 100px;
+    margin: auto;
+    border-radius: 4% 50%;
+    margin-bottom: .7rem;
+    font-weight: 200;
+}
+.award--box .award--icon:hover{
+    transform: scale(1.1);
+    transition: .3s all;
+}

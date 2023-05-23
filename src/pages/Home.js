@@ -7,6 +7,7 @@ import ExploreTreks from '../components/ExploreTreks';
 import Sign from '../components/Sign';
 import {motion} from 'framer-motion'
 import Gallery from '../components/gallery';
+import Newsletter from '../components/Newsletter';
 
 const Home = () => {
 return (
@@ -17,6 +18,7 @@ return (
     <Destination/>
     <ExploreTreks/>
     <Gallery/>
+    <Newsletter/>
     </motion.div>
 </>
 )
