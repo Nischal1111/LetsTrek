@@ -1,127 +1,86 @@
-import React,{useRef,useState} from 'react'
-import "../Css/TrekDetail.css"
+import React, { useState } from 'react';
+import "../Css/TrekDetail.css";
 
-import avatar from "../assets/avatar.jpg"
-import Sign from  "../components/Sign"
-import TrekData from '../Data/Trekdata'
-import Booking from '../components/Booking'
+import Sign from "../components/Sign";
+import TrekData from '../Data/Trekdata';
+import Booking from '../components/Booking';
+import Rev from "../components/Rev";
 
-import {useParams,Link} from "react-router-dom"
-
-
+import { useParams, Link } from "react-router-dom";
 
 const TrekDetail = () => {
-    const {id} = useParams();
-
-
-    const RevMsgref=useRef("");
-
-
-    const [tourRate, setTourRate]=useState(null)
-
-
-    console.log(id)
-    
-    
-    const submithandler=(e)=>{
-        e.preventDefault();
-        const revText=RevMsgref.current.value;
-        alert(`${revText},${tourRate}`)
-    }
-
-
-    const trek = TrekData.find((item)=>{
-        return item.id===parseInt(id)
-    })
-
-
-    console.log(trek)
-    const format = {day:'numeric',month:"long",year:"numeric"}
-    return (<>
-    <Sign/>
-        <section className='.trek--section'>
+    const { id } = useParams();
+    const trek = TrekData.find((item) => {
+    return item.id === parseInt(id);
+    });
+    return (
+    <>
+    <Sign />
+        <section className='trek--section'>
             <main className='main--div'>
-            <main className='left--div'>
-            <div className="detail">
-                <div className='detail--img--div'>
-                    <img src={trek.imgSrc} className='detail--img'/>
-                </div>
-            <div className='detail--info'>
-                        <h2 className='detail--title'>{trek.title}</h2>
-                    <div className='detail--rating'>
-                        <span className='rate'>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <span><i className="fa-solid fa-star-half-alt"></i>4.6 (13)</span>
-                        </span> 
-                        <span style={{marginLeft:"70px",fontSize:"22px",fontWeight:"200"}} className='detail--location'>
-                            <i className="fa-solid fa-location-dot" style={{marginRight:"10px"}}></i>{trek.location}
-                        </span>
-                        <div className='detail--extra'>
-                            <span className='price' style={{fontSize:"18px"}}>
-                                <i className="fa-solid fa-dollar-sign " style={{marginRight:"10px"}}></i>{trek.price} / per person
-                            </span>
-                            <span style={{marginLeft:"40px",fontWeight:"200",}}>
-                                <i className="fa-solid fa-user-group" style={{marginRight:"10px"}}></i>6-8 people per group
-                            </span>
+                <main className='left--div'>
+                    <div className="detail">
+                        <div className='detail--img--div'>
+                            <img src={trek.imgSrc} className='detail--img' />
                         </div>
-                        <h3 >Description</h3>
-                        <p>{trek.desc}</p>
+                    <div className='detail--info'>
+                        <h2 className='detail--title'>{trek.title}</h2>
+                        <div className='detail--rating'>
+                        <span className='rate'>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <span><i className="fa-solid fa-star-half-alt"></i>4.6 (13)</span>
+                        </span>
+                    <span style={{ marginLeft: "70px", fontSize: "22px", fontWeight: "200" }} className='detail--location'>
+                    <i className="fa-solid fa-location-dot" style={{ marginRight: "10px" }}></i>{trek.location}
+                    </span>
+                    <div className='detail--extra'>
+                        <span className='price' style={{ fontSize: "18px" }}>
+                        <i className="fa-solid fa-dollar-sign " style={{ marginRight: "10px" }}></i>{trek.price} / per person
+                        </span>
+                        <span style={{ marginLeft: "40px", fontWeight: "200" }}>
+                        <i className="fa-solid fa-user-group" style={{ marginRight: "10px" }}></i>6-8 people per group
+                        </span>
                     </div>
-            </div>
-            <div className='review'>
-                <h4>Customer Reviews (5 Reviews)</h4>
-                <form onSubmit={submithandler}>
+                    <h3>Description</h3>
+                    <p>{trek.desc}</p>
+                </div>
+                </div>
+                <div className='review'>
+                <h4>Customer Reviews </h4>
+                <form>
                     <div className='rev--div'>
-                        <span onClick={()=>setTourRate(1)}>
-                            1 <i className="fa-solid fa-star"></i>
-                        </span >
-                        <span onClick={()=>setTourRate(2)}>
-                            2 <i className="fa-solid fa-star"></i>
-                        </span>
-                        <span onClick={()=>setTourRate(3)}>
-                            3 <i className="fa-solid fa-star"></i>
-                        </span>
-                        <span onClick={()=>setTourRate(4)}>
-                            4 <i className="fa-solid fa-star"></i>
-                        </span>
-                        <span onClick={()=>setTourRate(5)}>
-                            5 <i className="fa-solid fa-star"></i>
-                        </span>
-                    </div>
-                    <div className="review--input">
-                        <input type='text' placeholder='Share your thoughts' ref={RevMsgref} required/>
-                        <button className="rev--btn" type='submit'>Submit</button>
+                    <span>
+                        1 <i className="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        2 <i className="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        3 <i className="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        4 <i className="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        5 <i className="fa-solid fa-star"></i>
+                    </span>
                     </div>
                 </form>
-                <div className='rev--person'>
-                    <div className='rev--item'>
-                        <img src={avatar}/>
-                        <div style={{width:"100%"}}>
-                            <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
-                                <div className='rev--name'>
-                                    <h3 style={{fontWeight:"200",fontSize:"22px",color:"azure"}}>Nischal Dai</h3>
-                                    <p style={{fontSize:"14px",color:"darkgrey"}}>{new Date("05-15-2023").toLocaleDateString("en-US", format)}</p>
-                                </div>
-                                <span style={{display:"flex",alignItems:"center"}}>
-                                    5 <i className="fa-solid fa-star" style={{marginLeft:"10px"}}></i>
-                                </span>
-                            </div>
-                            <h5>Was a thrilling adventure !!!</h5>
-                        </div>
-                    </div>
+                <Rev/>
                 </div>
             </div>
-            </div>
-            </main>
-            <main className='right--div'>
-                <Booking trek={trek}/>
-            </main>
-            </main>
-        </section>
-    </>)
+        </main>
+        <main className='right--div'>
+            <Booking trek={trek} />
+        </main>
+        </main>
+    </section>
+    </>
+  );
 }
 
-export default TrekDetail
+export default TrekDetail;
+

@@ -36,6 +36,7 @@
     transition: .4s all;
 }
 .news button a{
+    width: 100%;
     text-decoration: none;
 color: aliceblue;
 font-size: 25px;
