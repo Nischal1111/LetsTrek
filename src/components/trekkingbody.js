@@ -7,7 +7,7 @@ const Trekkingbody = () => {
   return (
     <div className='trekking'>
       <div className='trekimg'>
-        <img src="https://img.freepik.com/free-photo/misty-landscape-with-forest-covered-with-fog-dark-storm-clouds_181624-25465.jpg?w=996&t=st=1684497434~exp=1684498034~hmac=f41459e92a7e70c5141f6738dab5cc622972001b16a69791a4b36be9c7c2c6e2"></img>
+        <img src="https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"></img>
       </div>
       <div className='trektext'>
         <h1>Trekking &<br></br>Activites</h1>
