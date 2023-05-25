@@ -1,16 +1,24 @@
 .explorehead h1{
     margin-top: 4rem;
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: var(--h1);
+    color:black;
     text-align: center;
 
 }
+.explorehead span{
+    text-align: center;
+    background: var(--main--color);
+    display: inline-block;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0% 0%);
+    padding: .5rem 3rem;
+}
 .explorehead h1 i{
-    font-size: 35px;
-    margin-right: .7rem;
+    color: var(--main--color);
+    font-size: 40px;
+    margin-right: .5rem;
 }
 .prev, .next{
     border-radius: 10px;

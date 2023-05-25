@@ -21,7 +21,7 @@ const ExploreTreks = () => {
 return (
     <>
     <div className='explorehead'  >
-        <h1><i className="fa-solid fa-magnifying-glass"></i>Explore Treks</h1>
+        <h1><i className="fa-solid fa-magnifying-glass"></i> <span>Explore Treks</span></h1>
     </div>
     <div className='exploreslider'>
         <div className='btn-container'>

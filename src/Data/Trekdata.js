@@ -25,6 +25,7 @@ const TrekData =[
         location:'Kaski, Nepal',
         days: '15-20 Days',
         price:795,
+        level:"Medium",
         cln:'singletrek item-1',
         pricerange:"$500-$1000",
         desc :'Annapurna Base Camp Trek welcomes thousands of trekkers to its superb blend of nature with the beautiful villages. When we are at the Annapurna Base Camp feel like we’re base of the mountains of those above 7000m.  Annapurna Base Camp Trek provides the best.Annapurna Circuit Thorong La Pass is one of the great treks. Therefore, In the western Himalayan region full of great, Backdrops view from the view of the great mountains. In additon, To the clear rivers and beautiful villages, Crossing the pass of Thorong La is not an easy deal. Moreover, Reaching 5,416m this is regarded as one of the hardest, In trekking the Annapurna Circuit.' 
@@ -35,6 +36,7 @@ const TrekData =[
         title:'Langtang Gosaikunda Trek',
         location:'Rasuwa, Nepal',
         days:'8-11 Days',
+        level:"Difficult",
         cln:'singletrek item-2',
         price:445,
         pricerange:">$500",
@@ -47,6 +49,7 @@ const TrekData =[
         location:'Solukhumbu, Nepal',
         cln:'singletrek item-3',
         days:'12-15 Days',
+        level:"Difficult",
         price:1025,
         pricerange:"$1000-$1500",
         desc:'Everest Gokyo Lake Trek is one of the best trekking and hiking in Nepal. It is a moderate trek beginning from Lukla. However, The main highlighted feature of the Gokyo Lake 4800m. And Gokro Ri. Is its location which is a magical place. Moreover, That is residing in the foothills of Himalayas.Beautiful mountain Amadablam Base Camp Trek in Everest region. Therefore, know the khumbu valley. And khumbu glacier with great views. Of Highest Mountains in the world Mt Everest. Moreover, and amazing views with High Mountain peak. Therefore, with amazing Sherpa village Tibetan life.'
@@ -59,6 +62,7 @@ const TrekData =[
         location:'Gorkha, Nepal',
         cln:'singletrek item-4',
         days:'20-25 Days',
+        level:"Medium",
         price:1925,
         pricerange:"$1500-$2000",
         desc:'Manaslu Tsum Valley Trek is also one of the most beautiful treks in Nepal. Therefore, From the beautiful mountains and glaciers to the beautiful mountain trails and the ethnic villages, Manaslu Tsum Valley Trek is blessed with one of the best blends of nature and culture in the world.Everest Gokyo Lake Trek is one of the best trekking and hiking in Nepal. It is a moderate trek beginning from Lukla. However, The main highlighted feature of the Gokyo Lake 4800m. And Gokro Ri. Is its location which is a magical place. Moreover, That is residing in the foothills of Himalayas. Therefore, is full of blue glacier lakes dominated by Himalayas of Mount Everest,'
@@ -70,6 +74,7 @@ const TrekData =[
         location:'Manang, Nepal',
         cln:'singletrek item-5',
         days:'12-15 Days',
+        level:"Easy",
         price:825,
         pricerange:"$500-$1000",
         desc:'Tilicho Lake is located at an altitude of 4919m in the Manang district. This is one of the world’s highest lakes situated at the highest altitude. This Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people.Beautiful mountain Amadablam Base Camp Trek in Everest region. Therefore, know the khumbu valley. And khumbu glacier with great views. Of Highest Mountains in the world Mt Everest. Moreover, and amazing views with High Mountain peak. Therefore, with amazing Sherpa village Tibetan life.'
@@ -80,6 +85,7 @@ const TrekData =[
         title:'Mardi Himal Trek',
         location:'Kaski, Nepal',
         days:'8-11 Days',
+        level:"Easy",
         price:335,
         cln:'singletrek item-6',
         pricerange:">$500",
@@ -93,6 +99,7 @@ const TrekData =[
         title:'Khopra Dada Trek',
         location:'Khopra, Nepal',
         days:'8-11 Days',
+        level:"Easy",
         price:900,
         cln:'singletrek item-7',
         pricerange:"$500-$1000",
@@ -106,6 +113,7 @@ const TrekData =[
     pricerange:"$1000-$1500",
     cln:'singletrek item-8',
     days: "12-15 Days",
+    level:"Difficult",
     desc: "Experience the breathtaking beauty of the world's highest mountain peak and its surrounding landscapes., Is just a statement because Nepal really is a heaven filled. With the tall Himalayas, insanely beautiful waterfalls. In addition, Raging rivers, and soothing hot springs.Firstly, Nar Phu trek Yangla includes two villages Nar and Phu, which are the remote villages of that region. Nar Phu trek Yangla will become an amazing trek of the geography of those two villages. Happyland Treks provides a lots of Trekking Packages for the beautiful destinations of Nepal.",
     location: "Khumbu, Nepal"
     },{
@@ -116,6 +124,7 @@ const TrekData =[
     pricerange:"$1500-$2000",
     cln:'singletrek item-9',
     days: "20-25 Days",
+    level:"Easy",
     desc: "Embark on an off-the-beaten-path journey through stunning mountain landscapes and traditional Tibetan villages.Is just a statement because Nepal really is a heaven filled. With the tall Himalayas, insanely beautiful waterfalls. In addition, Raging rivers, and soothing hot springs.Firstly, Nar Phu trek Yangla includes two villages Nar and Phu, which are the remote villages of that region. Nar Phu trek Yangla will become an amazing trek of the geography of those two villages. Happyland Treks provides a lots of Trekking Packages for the beautiful destinations of Nepal.",
     location: "Manaslu, Nepal"
     },{
@@ -126,6 +135,7 @@ const TrekData =[
     pricerange:"$2000-$2500",
     cln:'singletrek item-10',
     days: "15-20 Days",
+    level:"Difficult",
     desc: "Discover the ancient kingdom of Lo and its unique culture and landscapes, hidden behind the Himalayan peaksThis Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people.Everest trip tour and travel has been a top-tier travel destination for more than a couple of decades now. The base camp of Everest is perfect for those who want to escape the chaos of society and want something challenging within nature. This Everest trip tour and travel is arguably the best destination for the task. The major region for the Everest Base Camp to be so popular .",
     location: "Mustang, Nepal"
     },  {
@@ -136,6 +146,7 @@ const TrekData =[
     price: 2000,
     pricerange:"$2000-$2500",
     days: "20-25 Days",
+    level:"Difficult",
     desc: "Trek through remote alpine landscapes to reach the base camp of the world's third-highest mountain peak. Ghale Gaun Trek Home Stay provides new experiences to the Tourists Ghale Gaun Trek Home Stay provides new experiences to the Tourists. Annapurna Circuit Thorong La Pass is one of the great treks. Therefore, In the western Himalayan region full of great, Backdrops view from the view of the great mountains. In additon, To the clear rivers and beautiful villages, Crossing the pass of Thorong La is not an easy deal. Moreover, Reaching 5,416m this is regarded as one of the hardest, In trekking the Annapurna Circuit.",
     location: "Kanchenjunga, Nepal"
     },
@@ -147,6 +158,7 @@ const TrekData =[
     price: 1800,
     pricerange:"$1500-$2000",
     days: "20-25 Days",
+    level:"Medium",
     desc: "Explore the rugged terrain and diverse ecosystems of the Makalu-Barun National Park and its towering peak.hidden behind the Himalayan peaksThis Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people.Beautiful mountain Amadablam Base Camp Trek in Everest region. Therefore, know the khumbu valley. And khumbu glacier with great views. Of Highest Mountains in the world Mt Everest. Moreover, and amazing views with High Mountain peak. Therefore, with amazing Sherpa village Tibetan life.",
     location: "Makalu, Nepal"
     },
@@ -158,6 +170,7 @@ const TrekData =[
     price: 1600,
     pricerange:"$1500-$2000",
     days: "20-25 Days",
+    level:"Difficult",
     desc: "Embark on a challenging trek around the world's seventh-highest mountain peak, through dramatic landscapes and ethnic communities.From there we start our hike up the hills to Ghale Gaun. We also trek to Bhujung and return back to Pokhara and take a ride back to Kathmandu.Everest trip tour and travel has been a top-tier travel destination for more than a couple of decades now. The base camp of Everest is perfect for those who want to escape the chaos of society and want something challenging within nature. This Everest trip tour and travel is arguably the best destination for the task. The major region for the Everest Base Camp to be so popular is being the base of the world’s tallest and mightiest Mt Everest. In addition, there are much more things it offers rather than just the peak and the views.",
     location: "Dhaulagiri, Nepal"
     },
@@ -169,6 +182,7 @@ const TrekData =[
     cln:'singletrek item-14',
     pricerange:"$1500-$2000",
     days: "15-20 Days",
+    level:"Easy",
     desc: "Discover the remote Nar and Phu valleys and their unique Tibetan culture, set amidst stunning mountain scenery.This Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people. Firstly, Nar Phu trek Yangla includes two villages Nar and Phu, which are the remote villages of that region. Nar Phu trek Yangla will become an amazing trek of the geography of those two villages. Happyland Treks provides a lots of Trekking Packages for the beautiful destinations of Nepal.",
     location: "Kaski, Nepal"
     },
@@ -177,6 +191,7 @@ const TrekData =[
     imgSrc:img15,
     title: "AmaDablam Base Trek",
     price: 1200,
+    level:"Medium",
     cln:'singletrek item-15',
     pricerange:"$1000-$1500",
     days: "8-11 Days",
@@ -191,6 +206,7 @@ const TrekData =[
     price: 1405,
     pricerange:"$1000-$1500",
     days: "15-20 Days",
+    level:"Difficult",
     desc: "The immense wilderness and the scenic route  of EverestBase Camp Trek Jiri. Has gives a sense of freedom and ecstasy that other treks can barely match.This Lake is formed by the glacial melt of the northern slope of Annapurna Mountain and Thorung peak. This is one of the holy Lakes of Hindu people.Everest Gokyo Lake Trek is one of the best trekking and hiking in Nepal. It is a moderate trek beginning from Lukla. However, The main highlighted feature of the Gokyo Lake 4800m. And Gokro Ri. Is its location which is a magical place. Moreover, That is residing in the foothills of Himalayas. Therefore, is full of blue glacier lakes dominated.",
     location: "Jiri, Nepal"
     },
@@ -202,6 +218,7 @@ const TrekData =[
     price: 700,
     pricerange:"$500-$1000",
     days: "8-11 Days",
+    level:"Medium",
     desc: "Located at the lap of the Annapurna Trekking area, Ghale Gau (2,080m) is a village of the ethnic Gurung people. To reach his unique and culturally rich village we drive 179km from Kathmandu to the village of Khudi in Lamjung.Everest Gokyo Lake Trek is one of the best trekking and hiking in Nepal. It is a moderate trek beginning from Lukla. However, The main highlighted feature of the Gokyo Lake 4800m. And Gokro Ri. Is its location which is a magical place. Moreover, That is residing in the foothills of Himalayas. Therefore, is full of blue glacier lakes dominated by Himalayas of Mount Everest, Mount Lhotse. Mount Makalu and Mount Cho- Oyu in a single line.",
     location: "Lamjung, Nepal"
     },
@@ -213,6 +230,7 @@ const TrekData =[
     price: 909,
     pricerange:"$500-$1000",
     days: "12-15 Days",
+    level:"Medium",
     desc: "Located in the Annapurna and Mustang region, Jomsom Muktinath Trek has a great blend of nature and culture. Moreover, From the beautiful snow-capped mountains to the ancient monasteries, Jomsom Muktinath is a package of epic magnitude.Annapurna Circuit Thorong La Pass is one of the great treks. Therefore, In the western Himalayan region full of great, Backdrops view from the view of the great mountains. In additon, To the clear rivers and beautiful villages, Crossing the pass of Thorong La is not an easy deal. Moreover, Reaching 5,416m this is regarded as one of the hardest, In trekking the Annapurna Circuit.",
     location: "Mustang, Nepal"
     },

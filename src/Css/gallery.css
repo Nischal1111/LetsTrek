@@ -1,5 +1,5 @@
 .gallery-title{
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: start;
@@ -12,6 +12,13 @@ margin: 2rem 3rem;
 }
 .gallery-title h2{
     margin-bottom: 2.5rem;
+}
+.gallery-title h2 span{
+    background: var(--main--color);
+        display: inline-block;
+        color: black;
+        clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0% 0%);
+        padding: .5rem 4rem;
 }
 
 .galleryImg{
