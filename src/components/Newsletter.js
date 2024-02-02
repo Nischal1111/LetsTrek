@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Css/news.css"
+import {Link} from "react-router-dom"
 
 const Newsletter = () => {
   return (
@@ -10,7 +11,7 @@ const Newsletter = () => {
             </h1>
              <p> Contact us right away</p>  
         </div>
-        <button className='news--button'><a href='/contact'>Contact Us</a></button>
+        <button className='news--button'><Link to="/contact">Contact Us</Link></button>
       
     </div>
   )

@@ -31,10 +31,12 @@ const Booking = ({trek}) => {
             navigate("/thank-you")
         }
     }
+
     const notValid=()=>{
         const { fullName, phone, email, book } = user;
     return fullName== '' && phone== '' && email== '' && book== '';
     }
+    
 return (
     <div className='booking'>
         <div className="booking--top" style={{display:"flex", alignItems:"center", justifyContent:"space-between",marginTop:".7rem"}}>

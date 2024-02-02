@@ -18,4 +18,5 @@ class Destinationdata extends Component{
         )
     }
 }
+//Destination
 export default Destinationdata

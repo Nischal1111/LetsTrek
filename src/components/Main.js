@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import '../Css/Main.css';
 import Homedata from '../Data/Homedata';
+import {Link} from "react-router-dom"
 
 
 const Main = () => {
@@ -39,9 +40,7 @@ return (<>
                 <div className='content'>
                     <h1>{title}</h1>
                     <p>{text}</p>
-                    <a href={url} className={btnClass}>
-                        {btnText}
-                    </a>
+                    <Link to="/trekkings" className={btnClass}>{btnText}</Link>
                 </div>
                 </article>
             </>)

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Css/contactbody.css'
+import {Link} from "react-router-dom"
 import {BsFillPinMapFill} from 'react-icons/bs'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {AiFillWechat} from 'react-icons/ai'
@@ -73,7 +74,7 @@ return (<>
     <img className='img2'src='https://images.pexels.com/photos/3599174/pexels-photo-3599174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'></img>
     <div className='startplan'>
             <h2>Hike your own hike</h2>
-            <button  className='plan--button'><a href='/trekkings'>Start Hiking</a></button>
+            <button  className='plan--button'><Link to="/trekkings">Start Hiking</Link></button>
     </div>
 </div>
 </>
